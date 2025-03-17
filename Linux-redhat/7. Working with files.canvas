@@ -1,0 +1,19 @@
+{
+	"nodes":[
+		{"id":"d35ee05ce5d735e2","type":"text","text":"Working with files\n\n****NOTE*** : Linux consider everything as file even if it is directories.","x":-682,"y":-301,"width":900,"height":100,"color":"3"},
+		{"id":"dc2afca3c862d3aa","type":"text","text":"`touch`\n#touch commands :\n1. make empty file\n2. change the `timestamp` of file\n\nExample: \n1. `touch file_name`\n2. `touch file_1 file_2 file_3` for creating multiple file same time.\n3. `touch {1..100}.txt` create 100 `txt` file in single command\n1. `touch -t 202405070630 file_name` create timestamp of desire date & time also format is `YYYY-MM-DD-HHMMSS`  \n\n****NOTE*** :  Linux is case sensitive meaning files with name `linux.txt` and `Linux.txt` treated as different because both have different `INode number`\n","x":-1092,"y":-1140,"width":600,"height":709},
+		{"id":"5addb9fbf1eac581","type":"text","text":"`file`\n#file give which type of file it is\n\n`file file_name`\nexample:\n1. `file zsh-5.5.1-6.el8_1.2.x86_64.rpm`\n2. `file linux.txt`","x":-1060,"y":-700,"width":408,"height":240,"color":"1"},
+		{"id":"c161e5058bc7ab56","type":"text","text":"`apt -ivh zsh-5.5.1-6.el8_1.2.x86_64.rpm`\n\n1. install `zsh CLI`","x":-1200,"y":-308,"width":449,"height":107,"color":"1"},
+		{"id":"98b2cbcd4ace314c","type":"text","text":"`alias`\n#alias to set shortcuts for accessing commands\n\nExample: \n1. `alias rm=rm -i`\n2.  now you can run `rm` only instead of `rm -i`\n\n`unalias`\n#unalias to remove shortcuts for accessing commands i.e. to remove `alias`\n\n1. `unalias rm`","x":-975,"y":-60,"width":624,"height":360},
+		{"id":"aec239c2af31a48a","type":"text","text":"`rm`\n#rm to delete files\n\nExample: \n1. `rm -rf *.txt`  delete all `.txt` files in single command without warnings \n","x":-94,"y":-60,"width":624,"height":360},
+		{"id":"d72b97bc2cd5fd62","type":"text","text":"`cp`\n#cp means `copy`\n\n1. use to copy the file and directory.\n2. `cp source_file_to_copy new_copy_file_name` \n\nExample: \n1. `cp anaconda-ks.cfg new.txt`\n2. `cp copy_file.txt /tmp` copy file in `/tmp` directory also if we don't give new copy file name then it copy file with same name. \n3.  `cp copy_file.txt /tmp/new.txt` copy file content in `/tmp` directory in file name `new.\n4. `cp -r /var/log/message /tmp/linux/message.txt`  copy file `recursively` in parent-child hierarchy directly without making `pwd` to`/var/log` directory\n","x":-232,"y":-849,"width":768,"height":389},
+		{"id":"a5918f93157f49c0","type":"text","text":"`mv`\n#mv means `move`\n\n1. use to `move` and `rename` the file and directory.\n2. `mv source_file_to_rename new_rename_file`\n3. `mv source_file_to_move destination_to_move` \n\nExample: \n1. `mv anaconda-ks.cfg kickstart.cfg` rename the `anaconda-ks.cfg` to `kickstart.cfg`\n2. `mv kickstart.cfg /tmp` cut the `kickstart.cfg` file from source path and paste in `/tmp` directory\n\n","x":530,"y":-424,"width":820,"height":340}
+	],
+	"edges":[
+		{"id":"f4ba0bf94d4ef3a8","fromNode":"d35ee05ce5d735e2","fromSide":"top","toNode":"dc2afca3c862d3aa","toSide":"bottom"},
+		{"id":"8a6f666f95be181b","fromNode":"d35ee05ce5d735e2","fromSide":"top","toNode":"d72b97bc2cd5fd62","toSide":"bottom"},
+		{"id":"5d2dc570b5d9409b","fromNode":"d35ee05ce5d735e2","fromSide":"bottom","toNode":"98b2cbcd4ace314c","toSide":"top"},
+		{"id":"281b5f7de257a067","fromNode":"d35ee05ce5d735e2","fromSide":"bottom","toNode":"aec239c2af31a48a","toSide":"top"},
+		{"id":"1000c83ebb48dfa7","fromNode":"d35ee05ce5d735e2","fromSide":"right","toNode":"a5918f93157f49c0","toSide":"left"}
+	]
+}

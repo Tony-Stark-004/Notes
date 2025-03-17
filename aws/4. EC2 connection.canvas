@@ -1,0 +1,8 @@
+{
+	"nodes":[
+		{"id":"464a72b3eb92863e","type":"text","text":"Ways to connect with EC2 instance","x":-280,"y":-361,"width":420,"height":61,"color":"3"},
+		{"id":"600547974e12d78e","type":"text","text":"**Using moba-xterm** for `Red-hat`\n\n1. give public IP address in `Remote host field`\n2. give `ec2-user`(by default name for every EC2 instance) in `Specify username field` \n3. click on `Advanced SSH settings`\n4. check `use private key` checkbox\n5. and upload `key-pair file` which you downloaded while creating `EC2 inatance`\n\n***\n**Using moba-xterm** for `Window`\n\n1. Click on `RDP`\n1. give public IP address in `Remote host field`\n2. give `administrator`(by default name for every EC2 instance for window) in `Specify username field` \n3. It will ask for password which to get from `AWS console` on connecting EC2 instance with `RDP client`\n4. Copy-paste the password and then you good to go","x":-512,"y":-273,"width":772,"height":553,"color":"1"},
+		{"id":"56e2a3ab149e89bc","x":-502,"y":-480,"width":376,"height":99,"color":"4","type":"text","text":"* `SSH` is used for `Linux machine`\n* `RDP` is used for `Windows machine`"}
+	],
+	"edges":[]
+}

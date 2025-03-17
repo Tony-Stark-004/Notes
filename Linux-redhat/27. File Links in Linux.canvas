@@ -1,0 +1,14 @@
+{
+	"nodes":[
+		{"id":"5a68f4d19ead9a04","type":"text","text":"****`Hard Links`*** : \n1. `cat > file.txt`\n2. `ln file.txt link_file.txt` Here `link_file.txt` is the link of `file.txt`\n\n****NOTE*** : \n1. `Inode` of `file.txt` and `link_file.txt` is exact same even the `permissions on file` is same \n2. If you change in `link_file.txt` then changes will reflect in `file.txt` as well and `vice-versa`\n3. If you delete even `original file` meaning `file.txt` the `link_file.txt` content is persist\n4. You can not make `Hard link` between two different `file systems`\n\n\n***How to find the file whose `INode` number we know***\n1. `find / -inum inode_number > /dev/null`\n2. `find / -inum 12345622 > /dev/null`\n","x":-619,"y":-160,"width":819,"height":500},
+		{"id":"d8bae4f9344c3d27","type":"text","text":"****`Soft Links`*** : \n1. `cat > file.txt`\n2. `ln -s file.txt link_file.txt` Here `link_file.txt` is the link of `file.txt`\n\n****NOTE*** :  For `soft link` we use `-s` with `ln` command\n\n1. `Inode` of `file.txt` and `link_file.txt` is different in case of `soft link` and both file have `different permission`. Soft link is shortcut of `original file`\n2. If you change in `link_file.txt` then changes will reflect in `file.txt` as well and `vice-versa`\n3. If you delete `original file` meaning `file.txt` the `link_file.txt` has no use and when you list it `ls -li link_file.txt` then it `blinks and color is red with arrow sign`  which indicates that `file.txt` is deleted\n4. You can make `Soft link` between two different `file systems`\n\n\n***How to find the file whose `INode` number we know***\n1. `find / -inum inode_number > /dev/null`\n2. `find / -inum 12345622 > /dev/null`\n","x":240,"y":-160,"width":1240,"height":500},
+		{"id":"b8e5b27318c84d45","type":"text","text":"`INode number` --> It is data structure which stores metadata of files like \n1. `Owner` of the files\n2. `Permission on files`\n3. `Creation date` and many more\n   \n****NOTE*** : `INode` number do not stores `content and name of the files`\n\n1. `df -i` this command shows you `INodes avaialable to file system`\n2. `ls -li file_name` this command show you `INodes for all files and directroy`","x":-161,"y":-700,"width":723,"height":300,"color":"1"},
+		{"id":"44bfb36cbe954bc6","type":"text","text":"File Links in Linux","x":-60,"y":-360,"width":520,"height":60,"color":"3"},
+		{"id":"ee15e541ecfec07b","type":"text","text":"Hard Links","x":-310,"y":-260,"width":250,"height":60,"color":"4"},
+		{"id":"94651978b2a734bf","type":"text","text":"Soft inks","x":460,"y":-260,"width":250,"height":60,"color":"4"}
+	],
+	"edges":[
+		{"id":"49ceb206fa0567f5","fromNode":"44bfb36cbe954bc6","fromSide":"left","toNode":"ee15e541ecfec07b","toSide":"top"},
+		{"id":"a69291965380f19e","fromNode":"44bfb36cbe954bc6","fromSide":"right","toNode":"94651978b2a734bf","toSide":"top"}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"nodes":[
+		{"id":"07e51e30bd7246b5","type":"group","x":-540,"y":220,"width":544,"height":90,"label":"Continuous Integration"},
+		{"id":"e88a74eaf241dbf5","type":"group","x":72,"y":220,"width":480,"height":90,"label":"Continuous Delivery"},
+		{"id":"3306a218280013a1","type":"text","text":"Infrastructure as code is executable textual format that use to configure the system using configuration management system tool like :\n1. `Ansible`\n2. `Puppet`\n3. `Chef`\n4. `Kubernetes`\n5. `Docker`","x":-230,"y":-340,"width":480,"height":280},
+		{"id":"1ca398d2dda554e2","type":"text","text":"Infrastructure as code","x":-275,"y":-420,"width":570,"height":60,"color":"3"},
+		{"id":"0a2c694660d57b2d","type":"text","text":"Continuous building, testing, and merging to master","x":-470,"y":60,"width":480,"height":80},
+		{"id":"eeb4923e312f0039","type":"text","text":"Continuous Delivery","x":100,"y":-20,"width":235,"height":60,"color":"3"},
+		{"id":"4ec361bfcd200199","type":"text","text":"Continuous Integration","x":-275,"y":-20,"width":235,"height":60,"color":"3"},
+		{"id":"bbb15f2e15cea46c","type":"text","text":"Plan","x":-520,"y":240,"width":112,"height":50},
+		{"id":"e0e299ee39301825","type":"text","text":"Code","x":-388,"y":240,"width":112,"height":50},
+		{"id":"74e8ab25f1c24ee6","type":"text","text":"Build","x":-254,"y":240,"width":112,"height":50},
+		{"id":"b33c9cea2f98eed2","type":"text","text":"Test","x":-128,"y":240,"width":112,"height":50},
+		{"id":"2930f456769a4740","type":"text","text":"Continuous deployment to a production-like environment","x":40,"y":60,"width":480,"height":80},
+		{"id":"b1e5dc4ef9f075a9","type":"text","text":"Release","x":92,"y":240,"width":140,"height":50},
+		{"id":"c4fd7aa58d1730dc","type":"text","text":"Deploy","x":254,"y":240,"width":117,"height":50},
+		{"id":"c42d12153e3bbdb1","type":"text","text":"Operate","x":392,"y":240,"width":140,"height":50},
+		{"id":"c3f7bfb3f5bc67c5","x":-563,"y":480,"width":365,"height":80,"type":"text","text":"How much time require to build or ready feature from an idea."},
+		{"id":"74512cfaf9543e95","x":-563,"y":380,"width":250,"height":60,"color":"3","type":"text","text":"Mean Lead Time"},
+		{"id":"36edc690d3d5fb73","type":"text","text":"How much time it require to recover from failure","x":-141,"y":480,"width":365,"height":80},
+		{"id":"5859a2a5687bb7ca","type":"text","text":"Mean Time To Recover","x":-141,"y":380,"width":250,"height":60,"color":"3"}
+	],
+	"edges":[
+		{"id":"cc49bd47b3ae0311","fromNode":"bbb15f2e15cea46c","fromSide":"right","toNode":"e0e299ee39301825","toSide":"left"},
+		{"id":"f951e331cf2b30d1","fromNode":"e0e299ee39301825","fromSide":"right","toNode":"74e8ab25f1c24ee6","toSide":"left"},
+		{"id":"9a7001a048d984ee","fromNode":"74e8ab25f1c24ee6","fromSide":"right","toNode":"b33c9cea2f98eed2","toSide":"left"},
+		{"id":"fb8339178ec2a693","fromNode":"b33c9cea2f98eed2","fromSide":"right","toNode":"b1e5dc4ef9f075a9","toSide":"left"},
+		{"id":"0dc5346cb8c51a76","fromNode":"b1e5dc4ef9f075a9","fromSide":"right","toNode":"c4fd7aa58d1730dc","toSide":"left"},
+		{"id":"1395e59f2f84b698","fromNode":"c4fd7aa58d1730dc","fromSide":"right","toNode":"c42d12153e3bbdb1","toSide":"left"},
+		{"id":"fd699e17feeb7dd0","fromNode":"74512cfaf9543e95","fromSide":"bottom","toNode":"c3f7bfb3f5bc67c5","toSide":"top"},
+		{"id":"07df76ba31da4cf6","fromNode":"5859a2a5687bb7ca","fromSide":"bottom","toNode":"36edc690d3d5fb73","toSide":"top"}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"id":"bfc969250cdf5b80","type":"text","text":"Manual command \n\n#man command is used to get details of other \n1. `commands`\n2. `files`\n3. `services`\n\n****Note*** : \n1. press `q` to get outside the `manual`.\n2. `man 5 cd` means show me 5th page `manual` of `cd` command","x":680,"y":-620,"width":600,"height":320,"color":"6"},
+		{"id":"795d895a88a88c2a","type":"text","text":"`man rsyslog.conf`\n\n\n****Note*** : `rsyslog.conf` is a configuration file for `rsyslogd` which logs the system messages on *nix system","x":860,"y":-100,"width":340,"height":180,"color":"4"},
+		{"id":"b3d2d73a4b7f2eff","type":"text","text":"Files ","x":900,"y":-217,"width":160,"height":59},
+		{"id":"29b12b35be6e5672","type":"text","text":"`man sshd`\n\n****Note*** : `sshd` is `daemon service` for `ssh` the system remotely","x":1250,"y":-100,"width":340,"height":180,"color":"4"},
+		{"id":"bc10b676c1564856","type":"text","text":"Services ","x":1260,"y":-218,"width":160,"height":60},
+		{"id":"9968d6269907a92e","type":"text","text":"`man cd`\n`man lsblk`\n\n****Note*** : `lsblk` command used to get information of attach storage to system","x":460,"y":-100,"width":340,"height":180,"color":"4"},
+		{"id":"189d5729aaaf02f9","type":"text","text":"Commands ","x":540,"y":-219,"width":160,"height":60},
+		{"id":"e3fe0ff5d1a37812","type":"text","text":"`su -`\n\n1. `su` means switch user\n2. `-` symbol means use root user environment variable\n\n****NOTE*** : `su aditya` means switch to user `aditya`\n","x":-240,"y":-740,"width":480,"height":180,"color":"1"},
+		{"id":"808742994968e58b","type":"text","text":"Format of command i.e. rule to fire command on CLI\n\n`command [options] <arguments>`\nexample: `ls -l`\n\n1. `ls` is command\n2. `-l` option\n3.  `file name`, `file path` and `service name` may be the `argument` if required.\n\n\n","x":-140,"y":-1080,"width":680,"height":240,"color":"3"},
+		{"id":"466c266ae94d228e","type":"text","text":"`whatis man` is used to get short description of `any command`\n\n`whereis man` is used to get information about where `binaries` and `manual` files are\n\n`which ls` is used to get information about whether command is `built-in command` or `external command` with their `path`\n\n****NOTE*** :  If in any case `whatis command` give you the error then run `mandb` command then run again. ","x":680,"y":-940,"width":520,"height":300,"color":"1"},
+		{"id":"8e1e6b9b83c20744","type":"text","text":"Help command \n#--help is used as `option` to get the all `options` present in command\n\nExample : `cd --help`\n\n","x":1414,"y":-558,"width":446,"height":178,"color":"5"}
+	],
+	"edges":[
+		{"id":"a9840a393e433b04","fromNode":"808742994968e58b","fromSide":"bottom","toNode":"e3fe0ff5d1a37812","toSide":"top","label":"example"},
+		{"id":"b29aea2535710bcb","fromNode":"bfc969250cdf5b80","fromSide":"bottom","toNode":"b3d2d73a4b7f2eff","toSide":"top"},
+		{"id":"d1cc5a3809dda599","fromNode":"189d5729aaaf02f9","fromSide":"bottom","toNode":"9968d6269907a92e","toSide":"top"},
+		{"id":"e5082abd9a0c642f","fromNode":"bfc969250cdf5b80","fromSide":"bottom","toNode":"189d5729aaaf02f9","toSide":"top"},
+		{"id":"b2d5d0366cc40e8c","fromNode":"bfc969250cdf5b80","fromSide":"bottom","toNode":"bc10b676c1564856","toSide":"top"},
+		{"id":"a5a00161e2ff74dc","fromNode":"b3d2d73a4b7f2eff","fromSide":"bottom","toNode":"795d895a88a88c2a","toSide":"top"},
+		{"id":"093604885af9ed8e","fromNode":"bc10b676c1564856","fromSide":"bottom","toNode":"29b12b35be6e5672","toSide":"top"},
+		{"id":"e6341477d3862f5d","fromNode":"bfc969250cdf5b80","fromSide":"right","toNode":"8e1e6b9b83c20744","toSide":"left"}
+	]
+}

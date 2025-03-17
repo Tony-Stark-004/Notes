@@ -1,0 +1,16 @@
+{
+	"nodes":[
+		{"id":"877b3e12f3f272da","x":-600,"y":-237,"width":365,"height":217,"type":"text","text":"`Serial port` -> It is WAN PORT\n1. connected by `Female serial cable`"},
+		{"id":"a7c8f5b3c4f0adc0","x":-140,"y":-360,"width":658,"height":60,"color":"3","type":"text","text":"Router Identification"},
+		{"id":"aad599fea261020c","type":"text","text":"`Ethernet port` -> It is LAN PORT\n1. connected by `RJ45 cable`\n\nLAN devices are :\n1. `PC`\n2. `LAPTOP`\n3. `SERVER`","x":-160,"y":-237,"width":325,"height":257},
+		{"id":"1d77d4848df1f670","type":"text","text":"`Console port` -> used to take control or access of router to configure the router","x":240,"y":-237,"width":340,"height":217},
+		{"id":"6c2cf9b012238448","type":"text","text":"`Aux port` -> used to take remote access of router to configure it but it does present now a days because we can take the remote access using `SSH` or `Telnet`","x":620,"y":-237,"width":440,"height":217},
+		{"id":"d5e4e50e5f8259c6","type":"text","text":"Types of WAN Port also known as `WIC -- WAN Interface Card`\n1. WIC 1T --> `One port in one slot`\n\t1. 1.544 Mbps\n2. WIC 2T --> `Two port in one slot`\n\t1. 2.048 Mbps","x":-980,"y":-519,"width":705,"height":219},
+		{"id":"e5423e8d4e7a2de7","x":-320,"y":80,"width":705,"height":219,"type":"text","text":"Types of LAN Port\n1. Ethernet port (ETH)  -> `10 mbps -- rare these days`\n2. Fast Ethernet port or (FE) -> `100 mbps -- 2 ports generally on branch router`\n3. Gigabit Ethernet or (Gig) -> `1000 mbps -- for higher throughout`\n4. 10 Gigabit Ethernet or 10 Gig -> `10,000 mbps -- in higher end router`"},
+		{"id":"868371a4e482095f","x":189,"y":-969,"width":1215,"height":560,"color":"1","type":"text","text":"How to take access of control port ---> to get access we need `Physical Connection` and `Software to see interface so that we can configure`\n\n1. `Physical Connection`\n\t1. your router console port is `RJ45` connector port and `RJ45` means LAN device\n\t2. LAN devices are `PC` and `Laptop`\n\t3. PC port is `COM port it is like WAN Female serial port` and \n\t4. LAPTOP port is `USB` most of the cases \n\t5. so a two port wire which one side is `RJ45` and other is either `COM port or USB` can use to make physical connection between router and `LAN Devices`\n\t\nNOW,\n1. `Software: Interface access`\n\t1. For Interface access we use `Putty tool` \n\t2. Now our physical connection is made and we have software to access we can configure router \n\t3. Open putty we have many option like `SSH, Telnet, Serial` choose `Serial` click okey also before clicking okey please check `Serial line option`\n\t\t1. For PC it should we `COM`\n\t\t2. for Laptop it should be something else\n\n****NOTE*** : `Serial line option`  can be checked by pressing `window + R` and use `devmgmt.msc` command it open` device manager` then check `Ports` option which is just below the `Network adapter` option "}
+	],
+	"edges":[
+		{"id":"4698e6504b1a315e","fromNode":"aad599fea261020c","fromSide":"bottom","toNode":"e5423e8d4e7a2de7","toSide":"top"},
+		{"id":"562591d3a29a2c42","fromNode":"877b3e12f3f272da","fromSide":"left","toNode":"d5e4e50e5f8259c6","toSide":"bottom"}
+	]
+}

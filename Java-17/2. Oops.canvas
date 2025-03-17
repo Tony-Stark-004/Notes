@@ -1,0 +1,6 @@
+{
+	"nodes":[
+		{"id":"d24a1d6e779a68a0","type":"text","text":"Oops pillars : \n1. Inheritance\n2. Polymorphism\n3. Encapsulation\n4. Composition or Abstraction","x":-600,"y":-638,"width":660,"height":198,"color":"1"}
+	],
+	"edges":[]
+}

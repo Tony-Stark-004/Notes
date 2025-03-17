@@ -1,0 +1,26 @@
+{
+	"nodes":[
+		{"id":"4a8834c638b84b9a","type":"text","text":"1. `create database database_name;`\n2. `create schema schema_name;`\n3. `drop database database_name;`\n4. `truncate shcema_name.table_name;`\n5. `Alter table schema_name.table_name` \n   `alter column user_name type varchar(100);`\n6. `Alter table schema_name.table_name` \n   `rename to new_table_name;` \n\nCreating table\n1. `create table schema_name.table_name (id int primary key, user_name varchar(50));`\n2. `drop table schema_name.table_name;`\n\n\n","x":-1170,"y":520,"width":500,"height":420,"color":"4"},
+		{"id":"da976da288a7d7c6","type":"text","text":"1. `insert into schema_name.table_name (id, user_name) values(1, 'Aditya');`","x":-600,"y":520,"width":520,"height":300,"color":"4"},
+		{"id":"6b86aac577f3bbe1","type":"text","text":"1. Open source\n2. Relational database\n3. Use SQL (Structured query Language)","x":-460,"y":-265,"width":380,"height":110},
+		{"id":"0a38c01ad3c4dac8","type":"text","text":"1. `Open CMD`\n2. `cd C:\\Program Files\\PostgreSQL\\16\\bin`\n3. `psql -U postgres`\n4. `type password of pg-admin`\n5. `select version();`","x":309,"y":-296,"width":420,"height":172},
+		{"id":"a0ad769efb26a090","type":"text","text":"DCL -> Data Controller language\n\n1. GRANT\n2. REVOKE","x":114,"y":240,"width":390,"height":260},
+		{"id":"9dda7693ac20b4ff","type":"text","text":"DML -> Data Manipulation Language\n\n1. INSERT\n2. UPDATE\n3. DELETE","x":-530,"y":240,"width":380,"height":260},
+		{"id":"1f012f5d29668845","type":"text","text":"","x":4,"y":520,"width":610,"height":300,"color":"4"},
+		{"id":"26b2150285bfb61f","type":"text","text":"DDL -> Data Definition Language\n\n1. CREATE\n2. DROP\n3. TRUNCATE\n4. RENAME\n5. ALTER","x":-1105,"y":240,"width":370,"height":260},
+		{"id":"23ab7bcdf5a54c5f","type":"text","text":"","x":680,"y":520,"width":600,"height":300,"color":"4"},
+		{"id":"cb1790fe49cd997d","type":"text","text":"TCL -> Transaction Controller language\n\n1. COMMIT\n2. ROLLBACK\n3. SAVEPOINT","x":729,"y":240,"width":400,"height":260},
+		{"id":"15f382cb15ff1bb7","type":"text","text":"Postgres","x":114,"y":0,"width":389,"height":54,"color":"3"},
+		{"id":"dccd16727529949f","type":"text","text":"","x":1400,"y":520,"width":600,"height":300,"color":"4"},
+		{"id":"a457fa6ec2e83bce","type":"text","text":"DQL -> Data Query Language\n\n1. SELECT","x":1480,"y":240,"width":400,"height":260}
+	],
+	"edges":[
+		{"id":"05679a1c5c3dd9e4","fromNode":"15f382cb15ff1bb7","fromSide":"bottom","toNode":"9dda7693ac20b4ff","toSide":"top"},
+		{"id":"8b6e7a9c2f7b81e1","fromNode":"15f382cb15ff1bb7","fromSide":"bottom","toNode":"a0ad769efb26a090","toSide":"top"},
+		{"id":"af95311d0ff299ba","fromNode":"15f382cb15ff1bb7","fromSide":"bottom","toNode":"cb1790fe49cd997d","toSide":"top"},
+		{"id":"0b97a99d3d54dbe4","fromNode":"15f382cb15ff1bb7","fromSide":"right","toNode":"a457fa6ec2e83bce","toSide":"top"},
+		{"id":"e9b13b0f639eeb3f","fromNode":"15f382cb15ff1bb7","fromSide":"left","toNode":"26b2150285bfb61f","toSide":"top"},
+		{"id":"f2afb1eb891342e9","fromNode":"15f382cb15ff1bb7","fromSide":"top","toNode":"0a38c01ad3c4dac8","toSide":"bottom"},
+		{"id":"148f9996250dc03b","fromNode":"15f382cb15ff1bb7","fromSide":"top","toNode":"6b86aac577f3bbe1","toSide":"bottom"}
+	]
+}

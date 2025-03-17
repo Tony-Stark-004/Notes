@@ -1,0 +1,8 @@
+{
+	"nodes":[
+		{"id":"6342660bfa917d17","type":"text","text":"Cisco 2nd mode cisco command","x":-280,"y":-620,"width":580,"height":60,"color":"3"},
+		{"id":"d7c9d686fa32aaba","x":-540,"y":-499,"width":460,"height":179,"type":"text","text":"Configuration storage locations\n1. `IOS` is stored in `flash` memory\n2. `Startup` configuration file is stored in `NVRAM`\n3. `Running` configuration is stored in `VRAM`"},
+		{"id":"cb7da151f1833c9f","x":-40,"y":-499,"width":820,"height":319,"type":"text","text":"Saving Configuration - COPY Command\n\n1. To save the content of VRAM into NVRAM\n\t1. `copy running-config startup-config` or\n\t2. `copy run start`\n2. To save the content of VRAM into Flash\n\t1. `copy run flash`\n3. To save the content of NVRAM into Flash memory\n\t1. `copy start flash`"}
+	],
+	"edges":[]
+}

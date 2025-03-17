@@ -1,0 +1,7 @@
+{
+	"nodes":[
+		{"id":"742139a4c7e9bc41","x":-580,"y":-260,"width":700,"height":920,"color":"3","type":"text","text":"Strings methods\n\n```\n* strip()\n1. (\"string-value\").strip()\n\n👉👉 Remove white-space from string\nIt also take value arguement and also return value\n```\n\n```\n* capitalize()\n1. (\"string-value\").capitalize()\n\n👉👉 Capitalize the first chracter of first letter of string\nIt return new string and you can assign into variable\n```\n\n```\n* title()\n1. (\"string-value\").title()\n\n👉👉 Capitalize the first chracter of every letter of string\nIt return new string and you can assign into variable\n```\n\n```\n* split(\"@\")\n1. (\"string-value\").split()\n\n👉👉 Split the string where it finds @ symbol\nIt return new string and you can assign into variable\n```"},
+		{"id":"891b67d3c4825a9f","type":"text","text":"# Strings Methods","x":-220,"y":-340,"width":340,"height":60,"color":"3"}
+	],
+	"edges":[]
+}

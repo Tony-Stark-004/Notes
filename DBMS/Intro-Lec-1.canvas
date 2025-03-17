@@ -1,0 +1,22 @@
+{
+	"nodes":[
+		{"id":"31875b838abc25fc","type":"text","text":"Data --> Collection of raw bits / bytes.","x":-520,"y":-180,"width":340,"height":60},
+		{"id":"25dcb59b87179f1d","type":"text","text":"DBMS ---> Data Base Management System","x":-340,"y":-360,"width":660,"height":60,"color":"3"},
+		{"id":"9c1e250cd61a52ba","type":"text","text":"Information --> Processed and organized data is known as information.","x":40,"y":-180,"width":363,"height":60},
+		{"id":"0861e383f44a98e6","type":"text","text":"Process data means ->\n1. suppose i order something and give the feedback\n2. Feedback is text which is stored as bits / bytes\n3. When this feedback is processed the reader / observer find some facts on behalf of my feedback like this product is for older person and all now this is information.","x":-380,"y":-70,"width":620,"height":210,"color":"4"},
+		{"id":"50c517430b6f6b6c","type":"text","text":"DB -> Data-Base\n1. Space where data can save and easily accessed, managed and updated.","x":-480,"y":431,"width":360,"height":149},
+		{"id":"6b59a96b1390ff18","type":"text","text":"Database Management System --> Have two parts","x":-330,"y":260,"width":580,"height":50,"color":"3"},
+		{"id":"13087b6c91b7160b","type":"text","text":"Advantage of DBMS and Dis-advantage of file system\n1. Data Redundancy and inconsistency\n2. Difficult in accessing data\n3. Data isolation\n4. Integrity problem\n5. Atomicity problem\n6. Concurrent-access anomalies\n7. Security problem","x":326,"y":120,"width":574,"height":280},
+		{"id":"fa8bfa2c7c98f393","type":"text","text":"Atomic -> means 0% or 100% i.e. there is no between state.","x":400,"y":35,"width":500,"height":60,"color":"1"},
+		{"id":"430757683591fa3d","type":"text","text":"***Note*** --> Everything is achievable using file system but small change cause the rewriting the program manually while DBMS give the freedom & all program is pre-written in DBMS.","x":940,"y":35,"width":400,"height":165,"color":"5"},
+		{"id":"c6af67aeabdf17ca","type":"text","text":"Data can be manage via set of programs\n1. Access\n2. Add\n3. Update\n4. Delete","x":50,"y":431,"width":380,"height":189}
+	],
+	"edges":[
+		{"id":"f2bcef90817e6350","fromNode":"25dcb59b87179f1d","fromSide":"bottom","toNode":"31875b838abc25fc","toSide":"top","label":"what is data"},
+		{"id":"3ccfb18b87ee34de","fromNode":"25dcb59b87179f1d","fromSide":"bottom","toNode":"9c1e250cd61a52ba","toSide":"top","label":"Information"},
+		{"id":"809536c96a9fbe7a","fromNode":"31875b838abc25fc","fromSide":"right","toNode":"9c1e250cd61a52ba","toSide":"left","label":"data process"},
+		{"id":"fea2fdbde0c6a690","fromNode":"6b59a96b1390ff18","fromSide":"bottom","toNode":"50c517430b6f6b6c","toSide":"top","label":"1"},
+		{"id":"db2e42b35325e42e","fromNode":"6b59a96b1390ff18","fromSide":"bottom","toNode":"c6af67aeabdf17ca","toSide":"top","label":"2"},
+		{"id":"fccc16c42c03f68b","fromNode":"6b59a96b1390ff18","fromSide":"right","toNode":"13087b6c91b7160b","toSide":"left"}
+	]
+}

@@ -1,0 +1,7 @@
+{
+	"nodes":[
+		{"id":"f194c2e145c4fac4","x":-200,"y":-320,"width":293,"height":60,"color":"3","type":"text","text":"Volumes or EBS"},
+		{"id":"450cf42198acbe4d","x":-545,"y":-240,"width":691,"height":340,"color":"1","type":"text","text":"# How to increase root disk size in LINUX\n**NOTE** : `Go to volumes section then click on Action then choose Modify Volume then increase size` then run below command in machine cli\n\n1. `sudo growpart /dev/xvda 4`\n\t1. `/dev/xvda` is `disk name can vary please check it by running: `\n\t\t1. `df -hT` \n\t\t2. `lsblk`\n2. `sudo xfs_growfs /dev/xvda4`"}
+	],
+	"edges":[]
+}

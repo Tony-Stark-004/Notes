@@ -1,0 +1,8 @@
+{
+	"nodes":[
+		{"id":"3bf1091f5e6d43b2","x":-548,"y":-285,"width":708,"height":505,"color":"1","type":"text","text":"# Docker Networking\n\n1. Host Mode Networking\n2. Bridge Mode Networking\n\nLet's take an example :\n1. `docker run -it -d --name my_container busybox`\n\t1. we are creating container having name `my_container` and `busybox` is image name\n2. `docker exec -it my_container ping -w3 google.com`\n\t1. `exec` meaning we are accessing the container\n\t2. we are pinging google.com \n3. `docker inspect my_container`\n\t1. will show `my_container` details with `ip-address`"},
+		{"id":"2f9d33830c3207bd","type":"text","text":"# Host Networking\nHere container shared the IP of host-machine\n\n1. `docker run -d --net=host --name container webservice:latest`\n\t1. making `Host Networking`\n\n# Bridge Networking\nHere we have more than one container and each container has it's IP which they form Bridge (`A single network or single IP`) on combining each container IP. Also Docker Compose is used to make Bridge Networking\n\n1. `docker run -d --name -p 8801:80 container1 webservice:latest`\n\t1. if we don't define anything by-fault it make `Bridge network`\n2. `docker run -d --name 8802:80 container2 webservice:latest`","x":180,"y":-285,"width":708,"height":505,"color":"5"},
+		{"id":"20a4d1387d864996","x":-60,"y":-360,"width":386,"height":59,"color":"3","type":"text","text":"Docker Networking"}
+	],
+	"edges":[]
+}

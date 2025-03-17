@@ -1,0 +1,30 @@
+{
+	"nodes":[
+		{"id":"fe37eb39128dd1d5","type":"text","text":"# Manage Multiple LVM Disks using Striping I/O","x":-360,"y":-380,"width":680,"height":80,"color":"3"},
+		{"id":"c554e7229b758d6c","type":"text","text":"Suppose i have `four partition` named as \n\t1. `/dev/sdb1`\n\t2. `/dev/sdc1`\n\t3. `/dev/sdd1`\n\t4. `/dev/sde1`\n\nnow, \n1. `pvcreate /dev/sd[b-e]1 -v` this is will create `4` physical volume at once\n2. `vgcreate -s 16M vg_strip /dev/sd[b-e]1 -v`\n3. `vgdisplay vg_strip -v` it will show the information of `vg_strip` including how many physical volumes this volume group contains along with extent size which is 16MB\n4. `lvcreate -L 900M -n lv_strip1 -i4 vg_strip`\n\t1. here `-i4` used to create `strip LVM` and also `4` meaning `4 physical volume`\n5. `lvdisplay /dev/vg_strip/lv_strip1` \n6. `lvdisplay vg_strip/lv_strip1 -m` it will show `LVM` information with `strip`\n7. `lvcreate -L 1G -i3 -I 256 -n lv_strip2 vg_strip /dev/sdb1 /dev/sdc1 /dev/sdd1` \n\t1. here by default `strip size is 64 KB` so we used `-I 256` to change the `strip size` from `64 KB to 256 KB`\n\t2. also we are making `strip with 3 physical volume` as you can see we use `-i3` that is reason we have to specifically defined the `physical volume name` so that machine won't not confused other wise machine can't decide which `physical voumen` do i have to consider out of 4 to make `3 strips`\n8. `lvdisplay vg_strip/lv_strip2 -m` \n9. `dmsetup deps /dev/vg_strip/lvm_strip[1-2]` this command will show very confined information about `LVM strip`","x":-560,"y":-280,"width":940,"height":640,"color":"1"},
+		{"id":"6f6778569041d45e","type":"text","text":"Disk 1\n`/dev/sda`","x":-607,"y":-800,"width":147,"height":97},
+		{"id":"1792bf6d9992189a","type":"text","text":"Disk 2\n`/dev/sdb`","x":-610,"y":-660,"width":150,"height":97},
+		{"id":"d08a34195926e544","type":"text","text":"Disk 3\n`/dev/sdc`","x":-610,"y":-520,"width":150,"height":97},
+		{"id":"273113c357587ef0","type":"text","text":"`/dev/sda1`","x":-340,"y":-778,"width":164,"height":53},
+		{"id":"ebec68092c471b51","type":"text","text":"`/dev/sdc1`","x":-340,"y":-498,"width":164,"height":53},
+		{"id":"582418271ce07429","type":"text","text":"`/dev/sdb1`","x":-340,"y":-638,"width":164,"height":53},
+		{"id":"d755fef7d0f63a44","type":"text","text":"`physical volume 2`","x":-100,"y":-641,"width":224,"height":60},
+		{"id":"1ce645066472d557","x":-100,"y":-778,"width":224,"height":60,"type":"text","text":"`physical volume 1`"},
+		{"id":"b4015c2a4afcb162","type":"text","text":"`physical volume 3`","x":-100,"y":-505,"width":224,"height":60},
+		{"id":"636d16c232f7f923","x":220,"y":-650,"width":260,"height":78,"type":"text","text":"# Volume group"},
+		{"id":"c1f8853332e9f586","x":640,"y":-650,"width":180,"height":78,"type":"text","text":"# LVM"},
+		{"id":"eff275a9d072f944","x":300,"y":-540,"width":396,"height":140,"color":"1","type":"text","text":"`So, this is striping where you used many physical volumes and combine them to make volume groups whose input-output is combining the all physical volumes`"}
+	],
+	"edges":[
+		{"id":"d9877a006bce388a","fromNode":"6f6778569041d45e","fromSide":"right","toNode":"273113c357587ef0","toSide":"left","color":"4","label":"70 i/o"},
+		{"id":"63c82351ee58a010","fromNode":"1792bf6d9992189a","fromSide":"right","toNode":"582418271ce07429","toSide":"left","color":"4","label":"70 i/o"},
+		{"id":"580c659dc4aa4c0d","fromNode":"d08a34195926e544","fromSide":"right","toNode":"ebec68092c471b51","toSide":"left","color":"4","label":"70 i/o"},
+		{"id":"39763631375dbe4d","fromNode":"273113c357587ef0","fromSide":"right","toNode":"1ce645066472d557","toSide":"left"},
+		{"id":"0eb3ab957c454faa","fromNode":"582418271ce07429","fromSide":"right","toNode":"d755fef7d0f63a44","toSide":"left"},
+		{"id":"56ec708819094f1e","fromNode":"ebec68092c471b51","fromSide":"right","toNode":"b4015c2a4afcb162","toSide":"left"},
+		{"id":"2f6700dce9c89ee0","fromNode":"1ce645066472d557","fromSide":"right","toNode":"636d16c232f7f923","toSide":"left"},
+		{"id":"96e4511508db4e76","fromNode":"d755fef7d0f63a44","fromSide":"right","toNode":"636d16c232f7f923","toSide":"left"},
+		{"id":"36daaaebb5a93734","fromNode":"b4015c2a4afcb162","fromSide":"right","toNode":"636d16c232f7f923","toSide":"left"},
+		{"id":"85383775a28b6356","fromNode":"636d16c232f7f923","fromSide":"right","toNode":"c1f8853332e9f586","toSide":"left","color":"1","label":"210 i/o"}
+	]
+}

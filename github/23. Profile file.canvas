@@ -1,0 +1,18 @@
+{
+	"nodes":[
+		{"id":"fc37d66b775a929e","x":-600,"y":-228,"width":250,"height":60,"type":"text","text":"System profile file"},
+		{"id":"d3bcfb5e44b72379","x":-620,"y":-140,"width":290,"height":60,"type":"text","text":"Global or say same for all user"},
+		{"id":"cc8ba109924c3e7a","x":-752,"y":-40,"width":555,"height":160,"color":"4","type":"text","text":"1. `/etc/profile` this directory or files is same for all users which Load environment variables like `$HOSTNAME, $PS1`\n2. `/etc/inputrc` load keyboard mapping like what key is what\n3. `/etc/bashrc` stores function and alias"},
+		{"id":"d1bb17d129af12e4","type":"text","text":"User profile file","x":230,"y":-228,"width":250,"height":60},
+		{"id":"690a1d3ebb1e9eec","type":"text","text":"Specific to the user","x":210,"y":-140,"width":290,"height":60},
+		{"id":"aadc973739a6814a","type":"text","text":"1. `.bash_logout`\n2. `.bash_profile`\n3. `.bashrc`\n4. `.bash_history` \n\n\n****NOTE*** : when we add user these four files automatic added to user profile directory and it comes from `/etc/skel` directory\n\nAlso,\n\n`.bash_profile` execute only once when user is login so if we change in it then we should source it `source .bash_profile`\n\nHere `source` meaning loading the file on system\n\n****IMPORTANT*** : consider making custom `.sh` file in `/etc/profile.d` instead of `/etc/profile` or `.bash_profile`","x":40,"y":-40,"width":580,"height":500,"color":"4"},
+		{"id":"d7783897fa464a6c","x":-267,"y":-400,"width":477,"height":60,"color":"3","type":"text","text":"Profile files"}
+	],
+	"edges":[
+		{"id":"f18050fb4e1512b9","fromNode":"d7783897fa464a6c","fromSide":"bottom","toNode":"fc37d66b775a929e","toSide":"top"},
+		{"id":"60e646509c85dafa","fromNode":"d7783897fa464a6c","fromSide":"bottom","toNode":"d1bb17d129af12e4","toSide":"top"},
+		{"id":"a346caf3dfacc8e0","fromNode":"fc37d66b775a929e","fromSide":"bottom","toNode":"d3bcfb5e44b72379","toSide":"top"},
+		{"id":"b02883bd75084d4b","fromNode":"d1bb17d129af12e4","fromSide":"bottom","toNode":"690a1d3ebb1e9eec","toSide":"top"},
+		{"id":"6000de8a350ab54c","fromNode":"d3bcfb5e44b72379","fromSide":"bottom","toNode":"cc8ba109924c3e7a","toSide":"top"}
+	]
+}

@@ -1,0 +1,8 @@
+{
+	"nodes":[
+		{"id":"c860631b6e5b621b","x":-220,"y":-320,"width":420,"height":60,"color":"3","type":"text","text":"# Git Rename and Restore"},
+		{"id":"3a5f924b098ea0ef","x":-500,"y":-240,"width":490,"height":280,"color":"3","type":"text","text":"# git mv\nused for renaming and it also pushed changed file into stagging area automatically\n\n```\n1. git mv file.txt file.html\n👉👉 changing file.txt to file.html\n```"},
+		{"id":"739ad7d993a18b08","type":"text","text":"# git restore\nused for un-stage the files\n\n```\n1. git add file.html\n👉👉 will stage the file.html\n\n2. git restore --staged file.html\n👉👉 will unstage the file.html\n```\n\n# Restoring the file\n\n```\n1. git restore <file-name>\n👉👉 It will restored the file content\n```","x":20,"y":-240,"width":490,"height":480,"color":"3"}
+	],
+	"edges":[]
+}

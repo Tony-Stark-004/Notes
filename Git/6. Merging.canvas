@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"2fa3ed78a6c7658d","type":"text","text":"# Git merge\nMerging is occur between target and source branch\n\nSuppose we need to merge the `dummy_branch` code into `main branch` then in this case : \n* Target branch is `main`\n* Source branch is `dummy_branch`\n\nTo merge the changes into `main branch` we should first checkout to `target branch` which is `main branch` then you need to run `git merge dummy_branch`\n\n```\n1. git checkout main\n\n2. git merge dummy_branch\n👉👉 This will merge dummy_branch into main\n```","x":-550,"y":-260,"width":640,"height":480,"color":"3"},
+		{"id":"f41ce6ec905079e4","x":-550,"y":280,"width":640,"height":300,"color":"4","type":"text","text":"# Git abort\nWhile merging when you got the conflict then you can abort that merge using\n\n```\n1. git merge --abort\n\n👉👉 Make sure that run this command where you are getting conflict meaning if you are merging dummy_branch into main then main branch will get the conflict then this command on main\n```"},
+		{"id":"08ebad4fe06701f2","type":"text","text":"# Type of merge\n* `fast-forward` merge\n* `recursive` merge\n\n# Fast-forward merge\nWhen `target branch` meaning `main branch` do not have any changes or say commits and you want to merge `dummy branch` meaning `source branch` then it merge using `fast-forward method` and no additional commit would be added\n\n# Recursive merge\nWhen `target branch` meaning `main branch` have changes and have commits and also we plan to merge `dummy_branch` into it then it will not merge using `fast-forward technique` because `main branch` also has the commit changes so it uses `recursive technique` and have extra merging branches commit when you do `git log`","x":120,"y":-260,"width":740,"height":520,"color":"3"},
+		{"id":"dfa6def5b213d965","type":"text","text":"# Merging","x":-20,"y":-360,"width":280,"height":71,"color":"3"}
+	],
+	"edges":[]
+}

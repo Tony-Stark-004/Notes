@@ -1,0 +1,34 @@
+{
+	"nodes":[
+		{"id":"c19d644c6b1e10e1","type":"text","text":"Types of router ","x":-299,"y":-440,"width":500,"height":50,"color":"3"},
+		{"id":"8c50733c574666df","type":"text","text":"On the basis of uses in network","x":-199,"y":-329,"width":301,"height":60},
+		{"id":"8b3df566edbcdea1","type":"text","text":"2. Internet edge router\n\nUsed by local ISPs at the edge of their network infrastructure","x":-234,"y":-240,"width":372,"height":135,"color":"5"},
+		{"id":"4de3d7b5fcf2a3a4","type":"text","text":"3. Service provider router\n\nUsed by global ISPs in their core network","x":-48,"y":-76,"width":372,"height":102,"color":"5"},
+		{"id":"908e7b679baf543c","type":"text","text":"1. Branch router\n\nRouter used in small branch offices, companies\n\nExample : used to use just internet service","x":-480,"y":-76,"width":372,"height":163,"color":"5"},
+		{"id":"bf6b1ce7b8567b8c","type":"text","text":"Modular Router\n\nExtra LAN or WAN ports can be added","x":-961,"y":-580,"width":301,"height":170,"color":"4"},
+		{"id":"56b846658c4e25db","type":"text","text":"Non modular router\n\nNo Extra ports cab be added","x":-961,"y":-240,"width":301,"height":140,"color":"4"},
+		{"id":"2d97d2b8b7796c25","type":"text","text":"On the basis of ports availability","x":-630,"y":-329,"width":301,"height":60},
+		{"id":"7e4cb1390375548b","type":"text","text":"On the basis of signaling type","x":240,"y":-329,"width":301,"height":60},
+		{"id":"41d2ea6d9aef3f22","type":"text","text":"Wired Router\n\nUsed in home","x":541,"y":-550,"width":301,"height":170,"color":"4"},
+		{"id":"76ad9511170f164e","type":"text","text":"Wireless Router\n\nUsed in home","x":541,"y":-210,"width":301,"height":140,"color":"4"},
+		{"id":"89ae6f260b63393e","type":"text","text":"1. Work similar like `BIOS` in PC \n2. It check all minimum configuration and if everything is right it load `IOS (Internet Operating System)` from `flash memory`\n\nstore router Bootstrap  Program","x":-900,"y":580,"width":430,"height":200,"color":"4"},
+		{"id":"eabe789d4c6fab5e","type":"text","text":"1. Contains the operating system `IOS`\n2. Store information of virtual LANs when we do virtual LAN in switches\n3. also can store backup files of `NVRAM`\n\n****NOTE*** : It is non-volatile","x":-419,"y":580,"width":430,"height":200,"color":"4"},
+		{"id":"98e1a964f1dbc266","type":"text","text":"Flash memory `like C drive in PC`","x":-358,"y":450,"width":338,"height":60},
+		{"id":"f6269bb268e1b6c0","type":"text","text":"Types of router memories","x":-300,"y":320,"width":622,"height":60,"color":"3"},
+		{"id":"5b441ac0be1a4fcd","type":"text","text":"1. Store startup configuration includes `IP address, routing protocol, hostname of the router`\n\n****NOTE*** : `Startup configuration` is backup copy of your running configuration and it's stored in `NVRAM` because `NVRAM` is non-volatile","x":40,"y":580,"width":430,"height":200,"color":"4"},
+		{"id":"4166fd50010ff325","type":"text","text":"1. Contains the running copy of configuration file\n2. store the routing table\n\n****NOTE*** : When power is turned OFF, Everything in `VRAM` is gone\n","x":510,"y":580,"width":430,"height":200,"color":"4"},
+		{"id":"f2923c585f8d1f25","type":"text","text":"VRAM `Volatile RAM` like `RAM in PC`","x":580,"y":450,"width":360,"height":60},
+		{"id":"a9c4f3eabd34bcc1","type":"text","text":"NVRAM `Non volatile RAM` like `ROM in PC`","x":80,"y":450,"width":390,"height":60},
+		{"id":"8ea3931564a7b333","type":"text","text":"ROM `Read only memory`","x":-840,"y":450,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"6b09345e73f8a6ba","fromNode":"2d97d2b8b7796c25","fromSide":"top","toNode":"bf6b1ce7b8567b8c","toSide":"right"},
+		{"id":"2b9d72a6ec7844a1","fromNode":"2d97d2b8b7796c25","fromSide":"bottom","toNode":"56b846658c4e25db","toSide":"right"},
+		{"id":"4c1ba12e1b470987","fromNode":"7e4cb1390375548b","fromSide":"top","toNode":"41d2ea6d9aef3f22","toSide":"left"},
+		{"id":"7c485ab031353465","fromNode":"7e4cb1390375548b","fromSide":"bottom","toNode":"76ad9511170f164e","toSide":"left"},
+		{"id":"bcf5845a42000a27","fromNode":"8ea3931564a7b333","fromSide":"bottom","toNode":"89ae6f260b63393e","toSide":"top"},
+		{"id":"9bb3856041dd2fd6","fromNode":"98e1a964f1dbc266","fromSide":"bottom","toNode":"eabe789d4c6fab5e","toSide":"top"},
+		{"id":"a4c5364882daee1f","fromNode":"a9c4f3eabd34bcc1","fromSide":"bottom","toNode":"5b441ac0be1a4fcd","toSide":"top"},
+		{"id":"24325ac1a69c6472","fromNode":"f2923c585f8d1f25","fromSide":"bottom","toNode":"4166fd50010ff325","toSide":"top"}
+	]
+}

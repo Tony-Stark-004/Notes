@@ -1,0 +1,247 @@
+{
+  "main": {
+    "id": "df8b3d9d0c347d8b",
+    "type": "split",
+    "children": [
+      {
+        "id": "b98e50309ed8eda3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9b13415de878b1df",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "python/0 Python.canvas",
+                "viewState": {
+                  "x": -88.35000000000004,
+                  "y": 80.91000000000032,
+                  "zoom": 0
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "0 Python"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "382ac3b26e5c36c6",
+    "type": "split",
+    "children": [
+      {
+        "id": "cf56d734783104b2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3d55b1666bbfb753",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "github/23. Profile file.canvas",
+                "viewState": {
+                  "x": -66,
+                  "y": 3307.3032599999856,
+                  "zoom": -2.915712100148023
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "23. Profile file"
+            }
+          },
+          {
+            "id": "99c2374373674e6e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "4aab1b58b4ad85ea",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "908ee18459239084",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "58c79e79c6ae496a",
+    "type": "split",
+    "children": [
+      {
+        "id": "f81770e584b1c251",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1642a0ab097acc50",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Excalidraw/Drawing 2025-01-12 01.33.29.excalidraw.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Drawing 2025-01-12 01.33.29.excalidraw"
+            }
+          },
+          {
+            "id": "c8533287cc06bad9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Word-meaning/21 Oct 2024.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 21 Oct 2024"
+            }
+          },
+          {
+            "id": "639b25795b640cc7",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "a71f46658856dcbd",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Word-meaning/21 Oct 2024.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 21 Oct 2024"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
+    }
+  },
+  "active": "9b13415de878b1df",
+  "lastOpenFiles": [
+    "python/1. Virtual Environment.canvas",
+    "python/0 Python.canvas",
+    "python",
+    "Git/6. Merging.canvas",
+    "Git/5. Branching.canvas",
+    "Pasted image 20250216011106.png",
+    "Pasted image 20250216005903.png",
+    "Pasted image 20250216003840.png",
+    "Pasted image 20250216003836.png",
+    "Git/1. Git configuration file.canvas",
+    "Git/4. Rename and Restore.canvas",
+    "Git/2. Git commands.canvas",
+    "Git/3. How git store the data.canvas",
+    "Pasted image 20250215215338.png",
+    "Pasted image 20250215215223.png",
+    "Pasted image 20250215215145.png",
+    "Pasted image 20250215210107.png",
+    "Pasted image 20250215210045.png",
+    "Pasted image 20250215193932.png",
+    "github/23. Profile file.canvas",
+    "Linux-redhat/23. Password management.canvas",
+    "github/Github.canvas",
+    "Excalidraw/Drawing 2025-01-12 01.33.29.excalidraw.md",
+    "Git",
+    "Prometheus",
+    "Excalidraw/Drawing 2025-01-29 23.00.57.excalidraw.md",
+    "Excalidraw/Drawing 2024-12-14 05.26.11.excalidraw.md",
+    "Excalidraw/Drawing 2024-12-04 02.28.52.excalidraw.md",
+    "Excalidraw/Drawing 2024-09-07 17.01.29.excalidraw.md",
+    "CCNA-Networking/1.CCNA Introduction.md",
+    "Excalidraw/Scripts/Downloaded/Modify background color opacity.md",
+    "Excalidraw/Scripts/Downloaded",
+    "Excalidraw/Scripts",
+    "Kubernetes",
+    "Word-meaning/02 Oct 2024.md",
+    "Word-meaning/16-09-2024.md",
+    "Word-meaning/10 Nov 2024.md",
+    "Word-meaning/4 Nov 2024.md",
+    "Word-meaning/07 Oct 2024.md",
+    "Word-meaning/Date 11-09-2024.md",
+    "Word-meaning/26 Oct 2024.md",
+    "Word-meaning/21 Oct 2024.md",
+    "Word-meaning/12-08-2024.md",
+    "Word-meaning/08 Oct 2024.md",
+    "Docker",
+    "aws",
+    "Word-meaning/12 Oct 2024.md",
+    "Word-meaning/30 Sep 2024.md",
+    "Linux-redhat/Untitled.md",
+    "Word-meaning/24 Sep, 2024.md",
+    "learnway-linux",
+    "Word-meaning",
+    "CCNA-Networking/Commands.md",
+    "Linux-redhat/5.Help & Manual command.md",
+    "DBMS/Introduction.md",
+    "CCNA-Networking/OSI-Model.md"
+  ]
+}

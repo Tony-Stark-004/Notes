@@ -1,0 +1,24 @@
+{
+	"nodes":[
+		{"id":"db2383a7f9f64d48","type":"text","text":"IP address ","x":-310,"y":-360,"width":920,"height":60,"color":"3"},
+		{"id":"864e903e5facf855","type":"text","text":"IP is \n1. 4 bytes = 32 bits number\n2. Divided into four octet i.e. 4*8 = 32 bits\n3. 1 octet = 8 bits so 1 octet can be 2^8 = 256 i.e. 0-255\n4. represented in dotted decimal i.e. 192.168.1.3","x":-600,"y":-137,"width":540,"height":205},
+		{"id":"01008d57c6b14313","type":"text","text":"IP is 32 bit number i.e. 2^32 = 4.3 billions (IPv4)\n\nIP divided into 5 classes by IANA. \n**Note** : only 1st octet used to categorize class\n1. Class A -> 0-127\n2. Class B -> 128-191\n3. Class C -> 192-223\n4. Class D -> 224-239\n5. Class E -> 240-255","x":20,"y":-137,"width":429,"height":305},
+		{"id":"5043631a6e2656aa","type":"text","text":"1st octet. 2nd octet. 3rd octet. 4th octet\n1. min IP number 0.0.0.0\n2. max IP number 255.255.255.255","x":20,"y":193,"width":429,"height":140},
+		{"id":"8421a602abdeb443","type":"text","text":"IP address = Network Part + Host Part","x":520,"y":-137,"width":400,"height":90},
+		{"id":"3063106f768a6ef5","type":"text","text":"1. Network Part used by network devices ex. router & fireball\n2. Host part used by device that connect to that network ex. PC","x":520,"y":-20,"width":420,"height":141},
+		{"id":"de761eac90f4be89","type":"text","text":"Each classes has different network part & host part\n1. class A --> 1st octet network & all 3 octet host part\n2. class B --> 1st 2nd octet network & other two octet host part\n3. class C --> 1st 2nd 3rd octet network & 4th octet host part","x":500,"y":160,"width":560,"height":195},
+		{"id":"83ffa47360268bbe","type":"text","text":"Class A ---> 0.0.0.0 - 127.0.0.0\n\nN --> Network bits\nH --> Host bits\n\n1. N.H.H.H \n2. network bits = 8 bits\n3. host bits = 24 bits\n4. total host 2^24\n5. reserved address = 0.0.0.0 & 127.0.0.1 (for loopback testing)\n6. valid address = 1.0.0.0 - 126.255.255.255\n7. private address range = 10.0.0.0 - 10.255.255.255\n8. default subnet mask = 255.0.0.0\n9. Because this class has high number of host which is 2^24 so used in very big enterprise network\n10. class A has only 1 private network i.e.  10.0.0.0","x":-640,"y":440,"width":800,"height":440,"color":"4"},
+		{"id":"ec5a6c64ca36724c","type":"text","text":"Class B ---> 128.0.0.0 - 191.0.0.0\n\nN --> Network bits\nH --> Host bits\n\n1. N.N.H.H \n2. network bits = 16 bits\n3. host bits = 16 bits\n4. total host 2^16\n5. reserved address = 169.254.0.0 for APIPA (Automatic Private IP Addressing) \n6. valid address = 128.0.0.0 - 191.255.255.255\n7. private address range = 172.16.0.0 - 172.31.255.255\n8. default subnet mask = 255.255.0.0\n9.  class B has 16 private network i.e.  172.16 - 172.31","x":235,"y":440,"width":800,"height":440,"color":"5"},
+		{"id":"07674687864064c4","type":"text","text":"Class C ---> 192.0.0.0 - 223.0.0.0\n\nN --> Network bits\nH --> Host bits\n\n1. N.N.N.H \n2. network bits = 24 bits\n3. host bits = 8 bits\n4. total host 2^8\n5. reserved address = No address\n6. valid address = 192.0.0.0 - 223.255.255.255\n7. private address range = 192.168.0.0 - 192.168.255.255\n8. default subnet mask = 255.255.255.0\n9. class C has 256 private network i.e. 192.168.0 - 192.168.255 ","x":1120,"y":440,"width":800,"height":440,"color":"6"},
+		{"id":"678a8386d237085d","type":"text","text":"Class E --> for experimental","x":1626,"y":333,"width":294,"height":71,"color":"1"},
+		{"id":"11451c748eb9c22c","type":"text","text":"Class D --> for Multicasting","x":1240,"y":333,"width":315,"height":71,"color":"2"},
+		{"id":"b9baaf6c20eee81a","x":1500,"y":891,"width":420,"height":129,"type":"text","text":"DHCP --> Server that assign IP address to device automatically over the network. use when there is too many device connected to network and doing manually is not possible"},
+		{"id":"b898cdcc05450727","x":-600,"y":-462,"width":250,"height":132,"color":"1","type":"text","text":"IP can be \n1. Private --> LAN\n2. Public --> WAN"},
+		{"id":"e846d7f63e072de7","x":-640,"y":900,"width":480,"height":160,"color":"1","type":"text","text":"*NOTE* : we never used 1st and last IP address of any network. ex. in network 10.0.0\n1. 10.0.0.0 -> represent network address\n2. 10.255.255.255 --> broadcast address\n"}
+	],
+	"edges":[
+		{"id":"6f8bfd0f306e8bd4","fromNode":"db2383a7f9f64d48","fromSide":"bottom","toNode":"864e903e5facf855","toSide":"top"},
+		{"id":"2ac26e7a8fb0b376","fromNode":"db2383a7f9f64d48","fromSide":"bottom","toNode":"01008d57c6b14313","toSide":"top"},
+		{"id":"53c373f56a7358bc","fromNode":"db2383a7f9f64d48","fromSide":"bottom","toNode":"8421a602abdeb443","toSide":"top"}
+	]
+}

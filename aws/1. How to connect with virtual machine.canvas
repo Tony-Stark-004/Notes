@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"id":"ccff6f3f9e426259","type":"text","text":"Zonal service\nExample:\n\n1. Subnet","x":-480,"y":-240,"width":240,"height":180},
+		{"id":"3d42384f89189f25","type":"text","text":"Types of service","x":-280,"y":-380,"width":500,"height":60,"color":"3"},
+		{"id":"008d44cd160397ac","type":"text","text":"Regional service\nExample :\n1. EC2\n2. ELB\n3. VPC","x":-180,"y":-240,"width":280,"height":180},
+		{"id":"8f9929da6799d60a","type":"text","text":"Global service\nExample :\n1. IAM\n2. Route53\n3. CloudFront","x":140,"y":-240,"width":240,"height":180},
+		{"id":"2fd80de469646888","type":"text","text":"Database services","x":0,"y":20,"width":380,"height":60,"color":"3"},
+		{"id":"64724971bfda5768","type":"text","text":"1. Amazon RDS (Relational Database Services)\n2. Amazon DynamoDB\n3. Amazon DocumentsDB (with MongoDB compatibility)\n4. Amazon Neptune\n5. Amazon Elastic cache\n6. Amazon Redshift\n\n\n***IMPORTANT*** \n1. DMS (Database migration service)","x":-89,"y":100,"width":579,"height":300},
+		{"id":"9f1b4823299ef4cd","type":"text","text":"Storage ","x":-660,"y":20,"width":360,"height":60,"color":"3"},
+		{"id":"7d377a02a2a21a46","type":"text","text":"1. S3 (simple storage service)\n2. EBS (elastic block storage)\n3. EFS (elastic file storage) --> support only Linux OS \n4. Snow family\n5. AWS Glacier","x":-769,"y":100,"width":579,"height":171},
+		{"id":"c4559787d3464338","type":"text","text":"Route 53","x":-684,"y":300,"width":380,"height":60,"color":"3"},
+		{"id":"775fb0d0c9e4edff","type":"text","text":"It is domain name system.\n1. it enables you to register and manage domain names and route traffic efficiently to various AWS resources or external endspoints.","x":-740,"y":380,"width":491,"height":183},
+		{"id":"bfdabaf52c961822","type":"text","text":"VPC (virtual private cloud)","x":6,"y":433,"width":380,"height":60,"color":"3"},
+		{"id":"371af6e93b85491e","type":"text","text":"Used to setup private cloud in region and contains multiple availibility zone","x":-54,"y":513,"width":509,"height":100},
+		{"id":"4f5ba49c7c0adba1","type":"text","text":"Amazon cloud front ","x":-684,"y":613,"width":380,"height":50,"color":"3"},
+		{"id":"74046f9d2e718d12","type":"text","text":"It is CDN service provided by amazon web service\n\n1. It purpose is to deliver content, including web pages, videos, images, and other assets","x":-740,"y":680,"width":491,"height":183},
+		{"id":"2a908e5a38dee95a","type":"text","text":"IAM (Identity and access management) ","x":2,"y":655,"width":380,"height":50,"color":"3"},
+		{"id":"0e8826e113c7b8f7","type":"text","text":"IAM enables you to securely control access to AWS services and resources. IAM allow you to manage users, groups, and roles to control who can do what within you AWS environment","x":-54,"y":722,"width":491,"height":141}
+	],
+	"edges":[
+		{"id":"116e2f5047e57d77","fromNode":"3d42384f89189f25","fromSide":"left","toNode":"ccff6f3f9e426259","toSide":"top"},
+		{"id":"c59f469ac6e72e27","fromNode":"3d42384f89189f25","fromSide":"bottom","toNode":"008d44cd160397ac","toSide":"top"},
+		{"id":"eacdf3fd12e78700","fromNode":"3d42384f89189f25","fromSide":"right","toNode":"8f9929da6799d60a","toSide":"top"}
+	]
+}

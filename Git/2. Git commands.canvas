@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"d62849c3e7870e13","type":"text","text":"# Git Help\n\n```\n1. git help\n👉👉 Will show you the basic git command \n\n2. git help -a\n👉👉 Will show you the all git command\n\n3. git help add\n👉👉 It will open the manual about add command automatically in default browser\n\n4. git help init\n👉👉 Same way open the manual about init command in the browser\n```","x":-500,"y":-320,"width":660,"height":480,"color":"3"},
+		{"id":"2284d1b60494799b","type":"text","text":"# Git Commit\n\n```\n1. git commit\n👉👉 It will open the vi editor of commit file with branch you are currently working in and you can commit in these file and to save it press :wq like we do to exit and save the vi editor. See here 👉👉\n\n2. git commit -m \"Hello-you\"\n👉👉 This is the shortcut that we use to commit\n```\n\n# Git Log\n\n```\n1. git log\n👉👉 Allow you to see the total commits\n\n1. git log --oneline\n👉👉 Will show you the every commit info in single line\n```","x":180,"y":-340,"width":660,"height":540,"color":"3"},
+		{"id":"0935aca833fb20aa","type":"file","file":"Pasted image 20250215193932.png","x":860,"y":-320,"width":500,"height":307},
+		{"id":"f3185c86ac6d00db","type":"text","text":"# Git basic commands","x":20,"y":-420,"width":377,"height":63,"color":"3"},
+		{"id":"b5e1450a27bb8d30","type":"file","file":"Pasted image 20250215210107.png","x":-980,"y":300,"width":448,"height":200},
+		{"id":"22bad100514eafa4","type":"text","text":"# Git Diff\nUsed to see the difference between the changes made on file\n\n```\n1. git diff\n👉👉 Will show the difference between working area and stagging area\n\n2. git diff --staged\n👉👉 Will show the difference between stagging area and Repository area\n\n1. git diff head\n👉👉 Will show the difference between working area and repository area\n```\n\nNOTE: \n\n`Stagging area` --> when we run `git add <file-name>` then it goes into the `Stagging area`\n\n`Repository area` -->  when we run `git commit -m \"commit-message\"` then it goes into the `Repository area`\n","x":-500,"y":220,"width":900,"height":560,"color":"3"}
+	],
+	"edges":[]
+}

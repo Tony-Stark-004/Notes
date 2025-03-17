@@ -1,0 +1,33 @@
+{
+	"nodes":[
+		{"id":"78a25f9fc0e4ddca","type":"text","text":"PC","x":-552,"y":1000,"width":116,"height":60},
+		{"id":"f02958873784d9b3","type":"text","text":"PC","x":-320,"y":1000,"width":116,"height":60},
+		{"id":"08b49ee82a3b74e5","type":"text","text":"PC","x":-140,"y":1000,"width":116,"height":60},
+		{"id":"da6c95df6e68c77f","type":"text","text":"PC","x":100,"y":1000,"width":116,"height":60},
+		{"id":"fb8504a141bfc8fd","type":"text","text":"IP - 20.0.0.2","x":-154,"y":1100,"width":188,"height":80},
+		{"id":"fb52a598379e62d2","type":"text","text":" IP - 20.0.0.3\n","x":100,"y":1100,"width":188,"height":80},
+		{"id":"b75cb71ad2fd9764","type":"text","text":"IP - 10.0.0.3","x":-392,"y":1100,"width":188,"height":80},
+		{"id":"b42fd840ce082c2a","x":-624,"y":1100,"width":188,"height":80,"type":"text","text":" IP - 10.0.0.2\n"},
+		{"id":"60fc8cd812121468","type":"text","text":"Router","x":-198,"y":700,"width":116,"height":60},
+		{"id":"981e5038dcd580f7","type":"text","text":"Switch","x":-436,"y":834,"width":116,"height":60},
+		{"id":"744d94b79e9b4c62","type":"text","text":"Switch","x":-24,"y":834,"width":116,"height":60},
+		{"id":"ab90c93ac938c06f","x":-708,"y":800,"width":250,"height":94,"color":"5","type":"text","text":"CD = 3 `(because 3 ports used 2 PC and one for router)`"},
+		{"id":"d39381090c9c51dd","type":"text","text":"CD = 3 `(because 3 ports used 2 PC and one for router)`","x":157,"y":800,"width":250,"height":94,"color":"5"},
+		{"id":"5d3db745bab36e2b","x":-1298,"y":500,"width":804,"height":260,"color":"1","type":"text","text":"1. 10.0.0.0\n2. 20.0.0.0\n\nare two different networks \n1. to communicate between two different network we use `Router` so `Router` mostly used in `WAN`\n2. to communicate in single network we use `Switch & Hub` so `Switch & Hub` mostly used in `LAN`"},
+		{"id":"bca905df4454eb88","type":"text","text":"`Hub`\n1. Work on `physical layer` of OSI model\n2. Dumb device have no memory (because it don't have memory it can't learn (IP or MAC) address of devices and broadcast message every single time )\n3. Collision domain `(CD)` = 1\n4. Broadcast domain = 1\n5. Work on half duplex mode (`meaning either recieve or send at one time`\n\n****IMPORTANT***\n1. `Collision domain` : no of ports / device which share the same bandwidth `(meaning if 4 devices connected and internet speed is 100mb/s then each get 25mb/s)`\n2. `broadcast doamin` : collection of device receiving the same message at the same time\n\n\n****NOTE*** : `collision domain` higher means better network and less collision of message","x":-1266,"y":-123,"width":740,"height":463,"color":"1"},
+		{"id":"3a6f077b44a0802b","type":"text","text":"Hub vs Switch","x":-676,"y":-283,"width":652,"height":60,"color":"3"},
+		{"id":"38146dd5b0b16fc6","type":"text","text":"`Switch`\n1. Work on `Data Link Layer` of OSI model `(NOTE: data link layer work on MAC Address and also PDU name is frame)`\n2. Intelligent device have memory (because it has memory it able to learn MAC address of devices and broadcast message only once then start unicast after learning devices MAC )\n3. Collision domain `(CD)` = no of ports used `(devices connected to switch port)`\n4. Broadcast domain = 1\n5. Work on full duplex mode (`meaning both recieve or send at one time`\n6. Work on `MAC address` and understand frames\n7. LAN device `(because it works on same network)`\n\n****IMPORTANT*** :\n1. `Collision domain` : no of ports / device which share the same bandwidth `(in Switch only once bandwidth is shared after learning MAC each devices has it's own collision domain)`\n2. `broadcast doamin` : collection of device receiving the same message at the same time\n\n\n****NOTE*** : `collision domain` higher means better network and less collision of message\n1. so `Swtich` is better then `Hub` because it has `High CD`","x":-378,"y":-173,"width":740,"height":563,"color":"5"},
+		{"id":"420a8b5336d2dfab","x":-8,"y":660,"width":588,"height":100,"type":"text","text":"CD = 3 + 3 = 6 `(sum of all network deviced connected to router)`\nBD = 2 `(no of ports used)`"},
+		{"id":"b39cd5c5dbdf2c86","type":"text","text":"Route","x":-436,"y":540,"width":740,"height":60,"color":"3"},
+		{"id":"3e51439c2f5b819b","type":"text","text":"`Switch`\n1. Work on `Nwteork Layer` of OSI model `(NOTE: Network layer work on IP Address and also PDU name is packet)`\n2. Intelligent device have memory (because it has memory it able to learn IP address of devices and don't broadcast message even a once)\n3. Collision domain `(CD)` = sum of all (CD) of network devices connected to router \n4. Broadcast domain = No. of used ports\n5. Work on full duplex mode (`meaning both recieve or send at one time`\n6. Work on `IP address` and understand `packets`\n7. WAN device `(because it inter-connect multiples LANs)`\n8. Also known as `Inter-networking device` because used to connect multiple different network\n\n****IMPORTANT*** :\n1. `Collision domain (CD)` : sum of all (CD) of network devices connected to router \n2. `broadcast doamin` : No. of used ports\n\n\n****NOTE*** : `collision domain` higher means better network and less collision of message\n1. so `Swtich` is better then `Hub` because it has `High CD`","x":-1520,"y":779,"width":780,"height":581,"color":"5"},
+		{"id":"ab2f483e7ce5a92f","x":-655,"y":1240,"width":995,"height":60,"color":"1","type":"text","text":"****IMPORTANT*** : first packet always failed because it uses to learn MAC and IP of source-destination devices"}
+	],
+	"edges":[
+		{"id":"d581b8f92f559ee7","fromNode":"60fc8cd812121468","fromSide":"bottom","toNode":"981e5038dcd580f7","toSide":"top","label":"10.0.0.1"},
+		{"id":"597c9b6dfc7ba484","fromNode":"60fc8cd812121468","fromSide":"bottom","toNode":"744d94b79e9b4c62","toSide":"top","label":"20.0.01"},
+		{"id":"c69edbf04688e650","fromNode":"981e5038dcd580f7","fromSide":"bottom","toNode":"78a25f9fc0e4ddca","toSide":"top"},
+		{"id":"b3eb7a18450897e4","fromNode":"981e5038dcd580f7","fromSide":"bottom","toNode":"f02958873784d9b3","toSide":"top"},
+		{"id":"2de8146de039a42f","fromNode":"744d94b79e9b4c62","fromSide":"bottom","toNode":"08b49ee82a3b74e5","toSide":"top"},
+		{"id":"14f2680fb73c5a23","fromNode":"744d94b79e9b4c62","fromSide":"bottom","toNode":"da6c95df6e68c77f","toSide":"top"}
+	]
+}

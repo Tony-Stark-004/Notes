@@ -1,0 +1,37 @@
+{
+	"nodes":[
+		{"id":"f037b835b2a7ab0b","type":"text","text":"POST\n`Power on self test`","x":-560,"y":-140,"width":250,"height":100},
+		{"id":"89ce97a80202c110","type":"text","text":"BIOS\n`Basic input output system`","x":-220,"y":-140,"width":250,"height":100},
+		{"id":"e464e2035dade6c7","type":"text","text":"MBR\n`Master root record`\n`it is 512 bytes`","x":125,"y":-140,"width":250,"height":100},
+		{"id":"599f2b5dc5c9bb90","type":"text","text":"GRUB2\n`Grand Unified bootloader` (version 2)","x":125,"y":60,"width":250,"height":100},
+		{"id":"dde7558b77dec44a","type":"text","text":"Kernel\n`Kernel (VMLinuz)` find driver in initramfs","x":-220,"y":60,"width":250,"height":100},
+		{"id":"95e6b11b209ab2dc","type":"text","text":"Hardware initialization","x":-560,"y":60,"width":250,"height":100},
+		{"id":"44fa6f5d3990dcb9","type":"text","text":"/sbin/init execution\n","x":-560,"y":240,"width":250,"height":100},
+		{"id":"81dc6d1f729eb1be","type":"text","text":"Initrd.target execution","x":-220,"y":240,"width":250,"height":100},
+		{"id":"474ace0c3b02affd","type":"text","text":"Switches root system","x":125,"y":240,"width":250,"height":100},
+		{"id":"7739d11e79f5d75d","type":"text","text":"Systemd looks for default.target","x":125,"y":420,"width":250,"height":100},
+		{"id":"cb89aff3df6e6201","type":"text","text":"Start other services & OS components","x":-220,"y":420,"width":250,"height":100},
+		{"id":"e2a75195e5da3c62","type":"text","text":"# Booting Process of RHEL 8","x":-220,"y":-400,"width":447,"height":60,"color":"3"},
+		{"id":"a95d21d585887a1f","type":"text","text":"`Booting` --> The process of copying the files of operating system on RAM from hard-disk drive is called booting. These files are stored in `/boot directory`\n\n","x":-553,"y":-320,"width":780,"height":80},
+		{"id":"f45286dec5873cd5","type":"text","text":"Start","x":-180,"y":-220,"width":140,"height":50,"color":"4"},
+		{"id":"6761e0c5adcb5400","type":"text","text":"`kernel execute it from initramfs as the first process having process ID 1 (PID=1)`\n\nNOTE\n`/sbin/init` --> `/lib/systemd/system`","x":-980,"y":160,"width":370,"height":190,"color":"5"},
+		{"id":"6bdadce12e28c5b1","type":"text","text":"# Target files or (Runlevel) \n\n##### `/lib/systemd/system/runlevel*target`\nThis Directory contains all `7 runlevel files`\n\n1. `/lib/systemd/system/runlevel0.target` --> poweroff.target --> `init 0`\n2. `/lib/systemd/system/runlevel1.target` --> rescue.target --> `init 1`\n3. `/lib/systemd/system/runlevel2.target` --> multi-user.target --> `init 2`\n4. `/lib/systemd/system/runlevel3.target` --> multi-user.target --> `init 3`\n5. `/lib/systemd/system/runlevel4.target` --> multi-user.target --> `init 4`\n6. `/lib/systemd/system/runlevel5.target` --> graphical.target --> `init 5`\n7. `/lib/systemd/system/runlevel6.target` --> rebbot.target --> `init 6`\n\n\n# NOTE --> \n1. `/etc/systemd/system/default.target` -->(soft link) `/usr/lib/systemd/system/graphical.target`\n\t1. This is the file which shows default target file (runlevel file)\n2. Systemd reads the files linked by `/etc/systemd/system/default.target` to determine the default system target (runlevel)\n3. `systemctl set-default graphical.target` \n\t1. this command is used to to set default target (runlevel)","x":420,"y":420,"width":965,"height":640,"color":"5"},
+		{"id":"9e3515cc49248853","type":"text","text":"Kernel root filesystem switched from initramfs root (/sysroot) to system root filesystem (/)\n\n#### NOTE :\n`/sysroot` is temporary file system where kernel root filesystem is mounted on the disk at `/sysroot directory` ","x":460,"y":110,"width":360,"height":280,"color":"6"}
+	],
+	"edges":[
+		{"id":"0e5092f2857912ba","fromNode":"89ce97a80202c110","fromSide":"left","toNode":"f037b835b2a7ab0b","toSide":"right","color":"1"},
+		{"id":"004064e4e5d67057","fromNode":"89ce97a80202c110","fromSide":"right","toNode":"e464e2035dade6c7","toSide":"left","color":"4","label":"1"},
+		{"id":"c03c654a29f4d34d","fromNode":"e464e2035dade6c7","fromSide":"bottom","toNode":"599f2b5dc5c9bb90","toSide":"top","color":"4","label":"2"},
+		{"id":"a62ba147da0d8156","fromNode":"599f2b5dc5c9bb90","fromSide":"left","toNode":"dde7558b77dec44a","toSide":"right","color":"4","label":"3"},
+		{"id":"8d42c1e3dad8724c","fromNode":"dde7558b77dec44a","fromSide":"left","toNode":"95e6b11b209ab2dc","toSide":"right","color":"4","label":"4"},
+		{"id":"349bfdeffcf9f790","fromNode":"95e6b11b209ab2dc","fromSide":"bottom","toNode":"44fa6f5d3990dcb9","toSide":"top","color":"4","label":"5"},
+		{"id":"2470f2bafa88f24f","fromNode":"44fa6f5d3990dcb9","fromSide":"right","toNode":"81dc6d1f729eb1be","toSide":"left","color":"4","label":"6"},
+		{"id":"6116f23f478254c0","fromNode":"81dc6d1f729eb1be","fromSide":"right","toNode":"474ace0c3b02affd","toSide":"left","color":"4","label":"7"},
+		{"id":"7b81f338f55c1842","fromNode":"474ace0c3b02affd","fromSide":"bottom","toNode":"7739d11e79f5d75d","toSide":"top","color":"4","label":"8"},
+		{"id":"82057e85f90ddbce","fromNode":"7739d11e79f5d75d","fromSide":"left","toNode":"cb89aff3df6e6201","toSide":"right","color":"4","label":"9"},
+		{"id":"c7d9ff79136f18e7","fromNode":"f45286dec5873cd5","fromSide":"bottom","toNode":"89ce97a80202c110","toSide":"top"},
+		{"id":"a2a0fe081d390e49","fromNode":"474ace0c3b02affd","fromSide":"right","toNode":"9e3515cc49248853","toSide":"left"},
+		{"id":"35fbb2d4eef8a294","fromNode":"44fa6f5d3990dcb9","fromSide":"left","toNode":"6761e0c5adcb5400","toSide":"right"},
+		{"id":"f9fa309d0abd0bc4","fromNode":"7739d11e79f5d75d","fromSide":"bottom","toNode":"6bdadce12e28c5b1","toSide":"left"}
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"nodes":[
+		{"id":"03fc4bdd89c50458","type":"text","text":"1. An MVP is minimal thing that you do to test your hypothesis\n2. An MVP is not about delivery as much as learning\n3. It's okey if the MVP fails-make sure that you learn form it\n\n****NOTE*** : In MVP we make very little little component and go for feedback instead of making entire dummy project","x":-877,"y":-380,"width":587,"height":200},
+		{"id":"97ff5da212fcadaa","type":"text","text":"MVP --> Minimum viable product","x":-780,"y":-460,"width":360,"height":60,"color":"3"},
+		{"id":"7d797356d7b3f42c","type":"text","text":"****NOTE*** : It is necessary to write test case first then start writing code  ","x":-230,"y":-380,"width":587,"height":50},
+		{"id":"2894b4fe6ffbfe32","type":"text","text":"TDD --> Test Driven Development","x":-133,"y":-460,"width":360,"height":60,"color":"3"},
+		{"id":"18819717aaee7a95","type":"text","text":"Github repo","x":-515,"y":-780,"width":190,"height":50},
+		{"id":"aea2a76626d147a9","type":"text","text":"Remote Branch","x":-175,"y":-780,"width":190,"height":50},
+		{"id":"fe070fd3accfbccb","type":"text","text":"Local Repo","x":-515,"y":-596,"width":190,"height":50},
+		{"id":"b64a3564021344a9","type":"text","text":"Local Branch","x":-175,"y":-596,"width":190,"height":50},
+		{"id":"d73f802323ba9182","type":"text","text":"Pull request","x":-154,"y":-834,"width":148,"height":50},
+		{"id":"4d8bdcfb88d9c0b5","type":"text","text":"Social Coding Principles","x":-315,"y":-1240,"width":250,"height":60,"color":"3"},
+		{"id":"90d4d809f1e2760e","type":"text","text":"Social coding is done communally with public repositories and all team members are encouraged to contribute","x":-628,"y":-1156,"width":413,"height":116},
+		{"id":"80616e32716ced7a","type":"text","text":"Pair programming results in higher quality code because \n1. Defects are found earlier\n2. There is broader understanding of the code base as you write code while discussing with your partner","x":-175,"y":-1156,"width":540,"height":156},
+		{"id":"1ec22e7091d3f839","type":"text","text":"We should have one repo for one micro-service instead of one repo of many micro-services","x":-695,"y":-945,"width":310,"height":107,"color":"5"},
+		{"id":"3f01c8a15edabc5b","type":"text","text":"Git Feature Branch Workflow","x":-355,"y":-920,"width":290,"height":57,"color":"3"},
+		{"id":"8071a252a381e7a0","type":"text","text":"Refactor --> means `blue` and improved code","x":-193,"y":-217,"width":250,"height":75,"color":"5"},
+		{"id":"6d8bbfa65cf89f8f","type":"text","text":"Pass --> means `green`","x":102,"y":-204,"width":250,"height":50,"color":"4"},
+		{"id":"d29aff3a66e06151","type":"text","text":"Fail --> if code fails it means `Red`","x":-80,"y":-297,"width":307,"height":60,"color":"1"},
+		{"id":"32913e586e5ad21b","x":-780,"y":-60,"width":360,"height":60,"color":"3","type":"text","text":"BDD --> Body driven development"},
+		{"id":"9d6c00786b0379c9","type":"text","text":"Document the behavior using `Gherkin syntax`\n\n`Syntax is`\n1. `Given` (some context)\n2. `When` (some event happen)\n3. `Then` (some testable outcome)\n4. `And` (more context, event, or outcome)","x":-523,"y":20,"width":587,"height":240},
+		{"id":"af4316faa6401cc5","type":"text","text":"BDD focuses on the behavior of the system from outside in. It looks at the system as a consumer of it. Unlike `TDD` which is focuses on the internal behavior of each component. `BDD` focuses that entire component together work as expected from outside","x":-1140,"y":20,"width":587,"height":120},
+		{"id":"919b96b68b9eff37","x":-700,"y":320,"width":250,"height":60,"color":"3","type":"text","text":"Designing for failure"},
+		{"id":"f174c9becd1a3ff6","type":"text","text":"`Circuit breaker patterns`\n\n1. It is designed to avoid cascading failure ","x":-483,"y":400,"width":507,"height":100},
+		{"id":"da0157d7139559c5","type":"text","text":"`Bulkhead patterns`\n\n1. It can be used to isolate failing other services like walls to protect other system to sink if one system have fault","x":-483,"y":510,"width":507,"height":110},
+		{"id":"8289fa4cb791ce04","x":-1030,"y":420,"width":507,"height":160,"type":"text","text":"`Retry pattern`\n\n1. Retry patterns work by retrying failed operation and if its failed and wait for double the time and retry again if it fails again and retry again by doubling the time"}
+	],
+	"edges":[
+		{"id":"e6ef15852ccc4125","fromNode":"18819717aaee7a95","fromSide":"bottom","toNode":"fe070fd3accfbccb","toSide":"top","label":"clone"},
+		{"id":"5eb5c035583e112a","fromNode":"aea2a76626d147a9","fromSide":"bottom","toNode":"b64a3564021344a9","toSide":"top","label":"push"},
+		{"id":"a0ebb6e18ee2323e","fromNode":"fe070fd3accfbccb","fromSide":"right","toNode":"b64a3564021344a9","toSide":"left","label":"branch"},
+		{"id":"c08a2b3902881f85","fromNode":"aea2a76626d147a9","fromSide":"left","toNode":"18819717aaee7a95","toSide":"right","label":"merge"},
+		{"id":"16d2e3ba3a5c00d4","fromNode":"6d8bbfa65cf89f8f","fromSide":"bottom","toNode":"8071a252a381e7a0","toSide":"bottom"},
+		{"id":"91dc1edbb9487c21","fromNode":"d29aff3a66e06151","fromSide":"left","toNode":"8071a252a381e7a0","toSide":"left"},
+		{"id":"ee1c7d8c0bade776","fromNode":"d29aff3a66e06151","fromSide":"right","toNode":"6d8bbfa65cf89f8f","toSide":"right"}
+	]
+}

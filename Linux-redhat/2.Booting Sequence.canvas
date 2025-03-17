@@ -1,0 +1,32 @@
+{
+	"nodes":[
+		{"id":"4282c43e7be54ba3","type":"text","text":"POST: Power On Self Test","x":-620,"y":-200,"width":260,"height":80},
+		{"id":"4815a9ac4d3eadbf","type":"text","text":"INIT: Initialization","x":1280,"y":-200,"width":250,"height":80},
+		{"id":"412b226e6ad00886","type":"text","text":"KERNEL","x":920,"y":-200,"width":250,"height":80},
+		{"id":"1f578289dc130641","type":"text","text":"MBR:  Master Boot Record","x":145,"y":-200,"width":260,"height":80},
+		{"id":"95e65248d11ad3ea","type":"text","text":"BIOS: Basic Input Output System","x":-240,"y":-200,"width":300,"height":80},
+		{"id":"86ea9f0322384d3f","type":"text","text":"Initram-FS","x":315,"y":-20,"width":460,"height":120},
+		{"id":"655e0ad636916a70","type":"text","text":"As soon as you start your machine, machine test itself the mother-board check all the component is working good or not after getting acknowledgement it handover to bios.","x":-900,"y":-440,"width":382,"height":170,"color":"4"},
+		{"id":"4409ed18ddf9d421","type":"text","text":"   1.  INIT 0 ---> Shut Down\n   2. INIT 1 ---> Single User Mode without GUI & NFS\n   3. INIT 2 ---> Multi User Mode without Network-FS\n   4. INIT 3 ---> Multi User Mode with Network-FS\n   5. INIT 4 ---> Research Purpose\n   6. INIT 5 ---> X11 (Linux Graphics)\n   7. INIT 6 ---> Reboot","x":1405,"y":-600,"width":590,"height":240,"color":"4"},
+		{"id":"f3de9dc0000155aa","type":"text","text":"It is hardware chip attached to mother-board and have prewritten program in it which decide which is your booting disk which is your primary disk and which is secondary and all. It is read only memory, also Simo's which is bios copy attached beside it which comes up with changeable settings and maintained by Simo's battery.","x":-460,"y":-655,"width":440,"height":230,"color":"4"},
+		{"id":"df54e73431bd6095","type":"text","text":"When bios get the control it check for MBR and it is 512 bytes memory space present in first sector of primary hard-disk and know about how many disk partition has been there and where is operating system and from where i can boot-up.","x":78,"y":-540,"width":467,"height":183,"color":"4"},
+		{"id":"1f8df43dfd5b403d","type":"text","text":"Booting Sequence","x":-90,"y":-760,"width":1030,"height":60,"color":"6"},
+		{"id":"9d8517c3fde8a7d9","type":"text","text":"MBR find for grub in hard-disk because grub is Linux boot loader","x":647,"y":-425,"width":357,"height":84,"color":"4"},
+		{"id":"f6cdcf90ce44fedb","type":"text","text":"GRUB","x":507,"y":-200,"width":280,"height":80},
+		{"id":"a799ea87cca84e1b","type":"text","text":"Initram File System. Because kernel and booting files is present in hard-disk <span style=\"font-weight:bold;; color:rgb(112, 48, 160)\">/boot/grub</span> partition. MBR is not able to directly access the boot file and kernel because hard-disk is not initialized, system does not know about hard-disk yet. But MBR can directly communicate with Initram-FS. Because Initram-FS can directly load on RAM so MBR able to access it and Initram-FS point the address of GRUB so that GRUB load and GRUB loads the kernel splash image (VM-Linus) and last VM-Linus which is kernel load other utility of operating system depending upon what type of INIT label we are using.","x":315,"y":240,"width":705,"height":231,"color":"4"}
+	],
+	"edges":[
+		{"id":"d9502ce52881ce5d","fromNode":"1f578289dc130641","fromSide":"bottom","toNode":"86ea9f0322384d3f","toSide":"left","label":"3"},
+		{"id":"4692ff13dc6f47c2","fromNode":"86ea9f0322384d3f","fromSide":"right","toNode":"f6cdcf90ce44fedb","toSide":"right","label":"Pointing Address of GRUB ---> step 4"},
+		{"id":"b2e1dfefb1bd5c1b","fromNode":"4282c43e7be54ba3","fromSide":"right","toNode":"95e65248d11ad3ea","toSide":"left","label":"1"},
+		{"id":"b48a74ed9eb7fe99","fromNode":"95e65248d11ad3ea","fromSide":"right","toNode":"1f578289dc130641","toSide":"left","label":"2"},
+		{"id":"d218b31f08032308","fromNode":"f6cdcf90ce44fedb","fromSide":"right","toNode":"412b226e6ad00886","toSide":"left","label":"5"},
+		{"id":"65915edab42bb2fb","fromNode":"412b226e6ad00886","fromSide":"right","toNode":"4815a9ac4d3eadbf","toSide":"left","label":"6"},
+		{"id":"7a999ef53c78b0f5","fromNode":"4282c43e7be54ba3","fromSide":"left","toNode":"655e0ad636916a70","toSide":"bottom","label":"desc.."},
+		{"id":"6e832f0986a96d4b","fromNode":"4815a9ac4d3eadbf","fromSide":"top","toNode":"4409ed18ddf9d421","toSide":"bottom"},
+		{"id":"971d34bb7ee629e3","fromNode":"95e65248d11ad3ea","fromSide":"top","toNode":"f3de9dc0000155aa","toSide":"bottom","label":"desc..."},
+		{"id":"f87eb83e1ce04817","fromNode":"1f578289dc130641","fromSide":"top","toNode":"df54e73431bd6095","toSide":"bottom","label":"desc.."},
+		{"id":"5eac4759b6cbb3c3","fromNode":"f6cdcf90ce44fedb","fromSide":"top","toNode":"9d8517c3fde8a7d9","toSide":"bottom","label":"desc.."},
+		{"id":"4dcb081a0c127ce5","fromNode":"86ea9f0322384d3f","fromSide":"bottom","toNode":"a799ea87cca84e1b","toSide":"top","label":"desc..."}
+	]
+}

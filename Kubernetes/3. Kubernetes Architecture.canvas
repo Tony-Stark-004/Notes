@@ -1,0 +1,12 @@
+{
+	"nodes":[
+		{"id":"3b6fcc81eb8edc06","x":-560,"y":-500,"width":495,"height":540,"type":"text","text":"# Master Node 1\nMaster node Processes\n\n* API Server\n\t* Is the gatekeeper for interacting cluster externally\n* ***\n* Schedular\n\t* Schedule the Pod on worker nodes \n* ***\n* Controller Manager\n\t* detect cluster state changes like Pod died\n* ***\n* etcd \n\t* It is brain and store state of cluster\n"},
+		{"id":"51de96858f9b0370","x":-660,"y":80,"width":440,"height":520,"type":"text","text":"# Worker node 1\nWorker node processes are\n\n* Container Runtime Environment\n\t* Docker runtime if you are using docker for containerized\n* ***\n* Kubelet\n\t* Kubernetes process which handle everything like machine resources allocation to nodes and all\n* ***\n* Kube Proxy\n\t* Kube Proxy forward the request to Pods in very intellectual way avoiding overhead"},
+		{"id":"f9675f362110da2a","x":-325,"y":-588,"width":520,"height":76,"color":"3","type":"text","text":"# Kubernetes Architecture"},
+		{"id":"1695cbebcb7ec2fa","type":"text","text":"# Master Node 2\nMaster node Processes\n\n* API Server\n\t* Is the gatekeeper for interacting cluster externally\n* ***\n* Schedular\n\t* Schedule the Pod on worker nodes \n* ***\n* Controller Manager\n\t* detect cluster state changes like Pod died\n* ***\n* etcd \n\t* It is brain and store state of cluster\n","x":-52,"y":-500,"width":495,"height":540},
+		{"id":"2b1da4268c6d6283","x":225,"y":-638,"width":435,"height":126,"color":"4","type":"text","text":"To make master node you need to install these 4 processes on bare machine and then added into the cluster"},
+		{"id":"05595d243786b1c0","type":"text","text":"# Worker node 2\nWorker node processes are\n\n* Container Runtime Environment\n\t* Docker runtime if you are using docker for containerized\n* ***\n* Kubelet\n\t* Kubernetes process which handle everything like machine resources allocation to nodes and all\n* ***\n* Kube Proxy\n\t* Kube Proxy forward the request to Pods in very intellectual way avoiding overhead","x":-180,"y":80,"width":440,"height":520},
+		{"id":"109a9e14b62009ee","type":"text","text":"# Worker node 3\nWorker node processes are\n\n* Container Runtime Environment\n\t* Docker runtime if you are using docker for containerized\n* ***\n* Kubelet\n\t* Kubernetes process which handle everything like machine resources allocation to nodes and all\n* ***\n* Kube Proxy\n\t* Kube Proxy forward the request to Pods in very intellectual way avoiding overhead","x":300,"y":80,"width":440,"height":520}
+	],
+	"edges":[]
+}

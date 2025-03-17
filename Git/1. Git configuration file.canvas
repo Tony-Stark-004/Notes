@@ -1,0 +1,12 @@
+{
+	"nodes":[
+		{"id":"265384db03b2d5f6","type":"text","text":"# Type of version control\n\n1. Local version control system\n2. Centralized version control system\n3. Distributed version control system","x":-440,"y":-740,"width":400,"height":200},
+		{"id":"0f1f9b1ba6a963cc","type":"text","text":"# Git three state\n\n1. Modified\n2. Staged ---> index file\n3. Committed","x":5,"y":-740,"width":380,"height":200},
+		{"id":"081dae1523c5d996","type":"text","text":"# Lecture 1","x":-134,"y":-500,"width":329,"height":63,"color":"3"},
+		{"id":"93cd08d27af2c1d8","type":"text","text":"# Git command\n\n```\n1. git --version\n\n👉👉 for checking versioning\n```\n\n```\n1. git config --global user.email\n👉👉 For global Level\n\n2. git config --local user.email\n👉👉 For particular project Level\n```\n\n```\n1. git config --unset user.email\n👉👉 Remove user email from project level\n\n2. git config --global --unset user.email\n👉👉 Remove user email from global level\n```\n\n```\n1. git config --local --remove-section user\n👉👉 Remove the specific section\n\n👾👾👾 See on left side this command remove the user section from config file inside .git directory\n```","x":-595,"y":-420,"width":600,"height":700,"color":"4"},
+		{"id":"f589d3af3eeead01","type":"text","text":"# Git Config Locations\n\n```\n1. Local (Repository/ Project Level)\n👉👉 repository/.git/config\n\n2. Global (User Level)\n👉👉 Users/ak/.gitconfig\n\n3. System (Git Installation)\n👉👉 /usr/local/etc/gitconfig\n```","x":31,"y":-420,"width":560,"height":340,"color":"3"},
+		{"id":"780f0abd9dabdfd3","type":"text","text":"```\n👉 Check Complete Git Config\n* git config --list --show-origin\n\n👉 Remove a specific setting for a specific level of config\n* git config --global --unset user.name\n\n👉 Remove the specific section\n* git config --global --remove-section user\n```","x":31,"y":-60,"width":600,"height":300},
+		{"id":"613ce2b26dd8223a","type":"file","file":"Pasted image 20250213102824.png","x":-1060,"y":-32,"width":400,"height":245}
+	],
+	"edges":[]
+}

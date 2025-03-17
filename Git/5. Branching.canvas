@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"7b130244cfc59f1c","x":-500,"y":-340,"width":619,"height":540,"color":"3","type":"text","text":"# Branching\n`.git --> refs --> heads` this location contains all the branches we have\n\n```\n1. cat ./git/refs/heads/master\n👉👉 it will show you the hash. And these hash is the last commit hash of on that particular branch\n\nsee here 👈👈\n```\n\n### How git know which branch is your current branch\n`.git --> Head` stores the current branch ref\n\n```\n1. cat .git/Head\n👉👉 This file stores the current branch ref\n\nsee here 👈👈\n```"},
+		{"id":"2aa846ff14e672cf","x":-1260,"y":-340,"width":728,"height":280,"type":"file","file":"Pasted image 20250216003840.png"},
+		{"id":"17a6549da6d0fe7b","x":-1227,"y":0,"width":695,"height":160,"type":"file","file":"Pasted image 20250216005903.png"},
+		{"id":"949eacab847cc724","x":-532,"y":-440,"width":271,"height":69,"color":"3","type":"text","text":"# Branching"},
+		{"id":"995108dfba0c2f8e","x":-190,"y":-700,"width":650,"height":329,"color":"4","type":"text","text":"# Deleting branch\n\n```\n1. git branch -d <branch-name>\n👉👉 This will delete the branch only if there is not commit or file in stagging area or say changes are merged in master branch\n\n2. git branch -D <branch-name>\n👉👉 This will delete the branch whether you merge the change or not it will delete changes also\n```"},
+		{"id":"32197bfcde2cb00f","x":-857,"y":-680,"width":650,"height":62,"type":"file","file":"Pasted image 20250216011106.png"}
+	],
+	"edges":[]
+}

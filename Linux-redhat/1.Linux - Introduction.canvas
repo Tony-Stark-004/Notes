@@ -1,0 +1,42 @@
+{
+	"nodes":[
+		{"id":"00993ba266bf607a","type":"text","text":"Linux","x":-980,"y":-666,"width":120,"height":54},
+		{"id":"2e7075883a33c076","type":"text","text":"hp UX","x":-780,"y":-666,"width":120,"height":54},
+		{"id":"c319783c6f631482","type":"text","text":"Mac-OS","x":-380,"y":-666,"width":140,"height":54},
+		{"id":"c664309216732692","type":"text","text":" Solaris Oracle","x":-160,"y":-666,"width":160,"height":54},
+		{"id":"3e2bf5f9f2d43403","type":"text","text":"IBM AIX","x":-580,"y":-666,"width":133,"height":54},
+		{"id":"76528d5910a6d48f","type":"text","text":"Linux : Operating system made by Linus Torvalds by modifying the kernel of Unix","x":-689,"y":-440,"width":379,"height":60,"color":"1"},
+		{"id":"1c65002266c02343","type":"text","text":"Red-Hat","x":-980,"y":-140,"width":140,"height":60},
+		{"id":"64a8baf160b61425","type":"text","text":"Fedora","x":-280,"y":-140,"width":135,"height":60},
+		{"id":"be1be8d63eeac0ab","type":"text","text":"Cent-OS","x":-802,"y":-140,"width":142,"height":60},
+		{"id":"c234a764b9da0784","type":"text","text":"Suse","x":-610,"y":-140,"width":97,"height":60},
+		{"id":"28342c96a787f4fc","type":"text","text":"Ubuntu","x":-460,"y":-140,"width":134,"height":60},
+		{"id":"33f635875617382a","type":"text","text":"Kali Linux","x":-100,"y":-140,"width":144,"height":60},
+		{"id":"f707c5a0eba2fcc4","type":"text","text":"Unix : Operating system made by Ken Thompson & Denny Ritchie","x":-620,"y":-940,"width":300,"height":100,"color":"3"},
+		{"id":"2a47bc451edf8de7","type":"text","text":"Linux OS","x":-592,"y":60,"width":158,"height":60,"color":"3"},
+		{"id":"982c62b6955b7a0e","type":"text","text":"Shell","x":-1016,"y":220,"width":250,"height":60},
+		{"id":"2aad4ce75c3d6034","type":"text","text":"Hardware","x":-280,"y":220,"width":250,"height":60},
+		{"id":"62a166ccb5e52380","type":"text","text":"Kernel","x":-638,"y":340,"width":250,"height":60},
+		{"id":"1d42bf0b233459a6","type":"text","text":"Shell ----> Kernel ----> Hardware","x":-669,"y":460,"width":312,"height":60,"color":"5"},
+		{"id":"76bf5dce3d2f6734","type":"text","text":"Red-Hat-8 --> Fedora based operating system.  kernel name is ***ootpa*** and version is above ***4.18.0.*** Repository name 1. ***App-stream*** 2. ***Base-os*** we can download packages from these two repo. Package is managed by 1. ***DNF*** 2. ***YUMv4***. Network packet filtering is done by ***NF-Tables***. ","x":-1013,"y":620,"width":1000,"height":120,"color":"6"},
+		{"id":"b0016f54901cd296","x":-1013,"y":791,"width":1000,"height":89,"color":"6","type":"text","text":"<span style=\"font-weight:bold;; color:rgb(112, 48, 160)\">GNU</span> --> Stands for Linux and not for Unix.  Linux open source package is managed by FSF (Free Software Foundation) and started by Richard Stallman."}
+	],
+	"edges":[
+		{"id":"bb16106c0bce5959","fromNode":"f707c5a0eba2fcc4","fromSide":"left","toNode":"00993ba266bf607a","toSide":"top","label":"Unix Flavors"},
+		{"id":"d3e284dc21cc74be","fromNode":"f707c5a0eba2fcc4","fromSide":"right","toNode":"c664309216732692","toSide":"top"},
+		{"id":"56bb511d1629fba5","fromNode":"f707c5a0eba2fcc4","fromSide":"bottom","toNode":"2e7075883a33c076","toSide":"top"},
+		{"id":"6442f9f9c43f28e8","fromNode":"f707c5a0eba2fcc4","fromSide":"bottom","toNode":"c319783c6f631482","toSide":"top"},
+		{"id":"ddb7db52382e981b","fromNode":"f707c5a0eba2fcc4","fromSide":"bottom","toNode":"3e2bf5f9f2d43403","toSide":"top"},
+		{"id":"70268e359444c006","fromNode":"76528d5910a6d48f","fromSide":"bottom","toNode":"c234a764b9da0784","toSide":"top"},
+		{"id":"293152d43e2b3928","fromNode":"76528d5910a6d48f","fromSide":"bottom","toNode":"28342c96a787f4fc","toSide":"top","label":"Debian Based"},
+		{"id":"7739078e1773ffd4","fromNode":"76528d5910a6d48f","fromSide":"right","toNode":"64a8baf160b61425","toSide":"top"},
+		{"id":"94d5b2e4e3e8eae5","fromNode":"76528d5910a6d48f","fromSide":"right","toNode":"33f635875617382a","toSide":"top"},
+		{"id":"ecf2ee0fdaaddf69","fromNode":"76528d5910a6d48f","fromSide":"left","toNode":"be1be8d63eeac0ab","toSide":"top"},
+		{"id":"be1714601b6c0492","fromNode":"76528d5910a6d48f","fromSide":"left","toNode":"1c65002266c02343","toSide":"top","label":"Fedora based Linux OS"},
+		{"id":"362a022df00a5226","fromNode":"2a47bc451edf8de7","fromSide":"left","toNode":"982c62b6955b7a0e","toSide":"top","label":"Get Instruction via CLI or GUI"},
+		{"id":"6aa79ead581a5360","fromNode":"2a47bc451edf8de7","fromSide":"right","toNode":"2aad4ce75c3d6034","toSide":"top"},
+		{"id":"b12855b146908d4f","fromNode":"2a47bc451edf8de7","fromSide":"bottom","toNode":"62a166ccb5e52380","toSide":"top","label":"Linux OS Contains"},
+		{"id":"40266a9cf2dead40","fromNode":"982c62b6955b7a0e","fromSide":"bottom","toNode":"62a166ccb5e52380","toSide":"left","label":"pass instruction to"},
+		{"id":"7d1ef8e96f749fa9","fromNode":"62a166ccb5e52380","fromSide":"right","toNode":"2aad4ce75c3d6034","toSide":"bottom","label":"Kernel Pass to"}
+	]
+}

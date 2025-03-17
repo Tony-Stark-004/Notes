@@ -1,0 +1,7 @@
+{
+	"nodes":[
+		{"id":"2063011848320359","x":-240,"y":-310,"width":420,"height":60,"color":"3","type":"text","text":"Restore Removed LVM"},
+		{"id":"69e68dc48f9454a3","x":-382,"y":-240,"width":882,"height":613,"color":"1","type":"text","text":"***How to restore LVM if deleted mistakenly*** \n\n1. `lvremove /dev/volume_group_name/lvm_name`. removing existing `LVM`\n2. when we delete `LVM` it does not delete permanently. it can be restored from `/etc/lvm/archive` directory. Also every small change in `LVM` store in this location.\n\t1. `cd /etc/lvm/archive` then run\n\t2. `ls -ltrh` this command shows the the list of changes occur and restoring point in `LVM`\n\t\t1. `ls -ltrh | grep volume_group_name`\n\t\t2. above command show the restoring point example : `/volume_group_name_12344.vg`\n4. make sure to test before restoring the `LVM`\n5. `vgcfgrestore volume_group_name --test -f /etc/lvm/archive/volume_group_name_12344.vg`\n6. `vgcfgrestore volume_group_name -f /etc/lvm/archive/volume_group_name_12344.vg`. running same command again but this time without `--test`\n7. here our `LVM` is restored but it is in `in-activate` state so we need to `activate it`\n8. `lvs` this command shows the whether `LVM` is activated or not\n9. `lvscan` the `step 8 or step 9` does the same thing\n10. `lvchange -ay /dev/volume_group_name/lvm_name`\n11. `lvscan`\n12. `mount /dev/volume_group_name/lvm_name /test_dir`\n13. `cd /test_dir`\n14. `ll` you will see all the data that was deleted "}
+	],
+	"edges":[]
+}

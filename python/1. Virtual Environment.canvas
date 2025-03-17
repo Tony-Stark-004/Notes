@@ -1,0 +1,7 @@
+{
+	"nodes":[
+		{"id":"f1376445305f3faa","x":-300,"y":-365,"width":390,"height":65,"color":"3","type":"text","text":"# Virtual Environment"},
+		{"id":"5dfb41cfa5fbbba0","x":-588,"y":-280,"width":577,"height":515,"type":"text","text":"\n# Virtual Environment\nIt is same like Docker isolated environment for python application\n\n```\n1. py -3 --version\n2. py -3 -m venv <environment-name>\n```\n\n# For mac\n\n```\n1. python3 --version\n2. python3 -m venv <environment-name>\n```\n\nNote: \n* Need to give path for `venv` interpreter otherwise it use global\n* Need to give path for `venv` terminal otherwise it uses global"}
+	],
+	"edges":[]
+}

@@ -1,0 +1,8 @@
+{
+	"nodes":[
+		{"id":"07930bcf27898ee1","type":"text","text":"# Docker-file commands\n\n1. FROM\n2. RUN\n3. CMD\n4. COPY\n5. ADD --> same as copy with addition feature\n\t1. you can extract `.tar` file directly\n\t2. you can use `URL` as well instead of file which you want to copy\n6. WORKDIR\n7. ENTRYPOINT --> same as CMD command used to execute some command\n\t1. used to run default command at run time meaning when container is running what's default command you want to run for which we used it\n8. ENV\n9. LABEL --> used to define metadata like who is owner so email can be metadata\n\t1. Also LABEL are used to find docker container we have so many containers\n10. HEALTHCHECK\n11. STOPSIGNAL\n12. VOLUME\n13. EXPOSE","x":-401,"y":-300,"width":700,"height":620},
+		{"id":"0fad2c08f170716f","type":"text","text":"# How to Write Docker-file\n\n1. `FROM node:8.16 as build-deps`\n2. `WORKDIR /usr/src/app`\n3. `COPY package.json yarn.lock ./`\n4. `RUN yarn`\n5. `COPY . ./`\n6. `RUN yarn build`\n7. `FROM ngnix:1:12-alpine`\n8. `COPY --from=build-deps /usr/src/app/build /usr/share/nginix/html`\n9. `EXPOSE 80`\n10. `CMD [\"nginx\", \"-g\", \"daemon off;\"]`\n\n","x":320,"y":-300,"width":700,"height":400,"color":"5"},
+		{"id":"7de18bd2ebf7b061","type":"text","text":"DOCKERFILE 2.0","x":174,"y":-380,"width":250,"height":60,"color":"3"}
+	],
+	"edges":[]
+}

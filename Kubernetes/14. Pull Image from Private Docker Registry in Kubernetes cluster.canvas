@@ -1,0 +1,12 @@
+{
+	"nodes":[
+		{"id":"158ebcaeb443aa56","type":"text","text":"# Pull Image from Private Docker Registry in Kubernetes cluster","x":-440,"y":-358,"width":900,"height":78,"color":"3"},
+		{"id":"737e030a3f4764fd","type":"text","text":"# Steps to pull image from private registry\nBasically there is 2 step to do that\n\n1. Create Secret component\n\t*  it contain access token or authenticate credential of our private docker repository\n2. Configure Deployment/Pod\n\t* Using special attribute `imagePullSecret` to use Secret component containing the docker repository credential\n\n# Step 1 Creating Secret component\n\n![[Pasted image 20250116024725.png]]\n\n* `data --> .dockerconfigjson` value is come from running `cat .docker/config.json | base64`\n\n# Video link\nhttps://www.youtube.com/watch?v=asIS4KIs40M&list=PLy7NrYWoggjziYQIDorlXjTvvwweTYoNC&index=15","x":-540,"y":-260,"width":920,"height":740,"color":"4"},
+		{"id":"3a7a1ce005b7e5a5","type":"file","file":"Pasted image 20250116015527.png","x":-580,"y":-640,"width":399,"height":268},
+		{"id":"c737acdb6fbc7c6f","type":"text","text":"# Step 2 Deployment/Pod Config file\n\n![[Pasted image 20250116024828.png]]\n\n* `imagePullSecrets` is the attribute used for secret component which is specific to image pull\n* `imagePullPolicy` is the attribute which always pull the image from `hosted repository` and not if it present locally \n\n```\n1. kubectl apply -f my-app-deployment.yaml\n2. kubectl get pod\n3. kubectl logs <pod container name>\n4. kubectl describe <pod container name>\n```","x":400,"y":-260,"width":840,"height":1140},
+		{"id":"5f5d8f6a6ec8eee1","type":"file","file":"Pasted image 20250116025248.png","x":-980,"y":-260,"width":400,"height":228},
+		{"id":"5598d31735096edb","type":"file","file":"Pasted image 20250116025342.png","x":-1313,"y":-20,"width":733,"height":261},
+		{"id":"a5fda4e07f404afc","type":"file","file":"Pasted image 20250116025408.png","x":-1384,"y":260,"width":808,"height":205}
+	],
+	"edges":[]
+}

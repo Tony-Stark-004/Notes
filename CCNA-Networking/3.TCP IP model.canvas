@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"id":"4e67c9bd5b313b3a","type":"text","text":"Network Access Layer","x":680,"y":-158,"width":250,"height":60},
+		{"id":"160ef14aeb16329d","type":"text","text":"Internet Layer","x":320,"y":-68,"width":250,"height":60},
+		{"id":"22bbf63cec5897ef","type":"text","text":"Application Layer","x":-650,"y":-128,"width":250,"height":60},
+		{"id":"1f0f356849ce1085","type":"text","text":"TCP/IP Model","x":-310,"y":-420,"width":880,"height":60,"color":"3"},
+		{"id":"a236d653fe99a2db","type":"text","text":"Transport Layer","x":-180,"y":-98,"width":250,"height":60},
+		{"id":"719fa454e5bc0b78","type":"text","text":"Application Layer Protocols\n1. HTTP(80) -> for web app\n2. HTTPS(443) -> secure http\n3. FTP(20, 21) -> for file transfer (secure)\n4. TFTP(69) -> trivial ftp (unsecure)\n5. SMTP(25) -> for sending mailing\n6. POP(110) -> Post office protocol for receiving mail\n7. IMAP(143) -> Internet mail accessing protocol\n8. TELNET(23) -> remote protocol (unsecure)\n9. SSH(22) -> remote protocol (secure)\n10. DNS(53) -> domain name server\n11. NTP(119) -> network time protocol\n12. NNTP(123) -> network news transmission protocol","x":-985,"y":60,"width":460,"height":419,"color":"4"},
+		{"id":"48e8fa8e0769be1b","type":"text","text":"Transport Layer Protocol\n\n1. TCP --> slow but secure. Work on 3 way handshaking method means\n\t1. sync request from sender to receiver\n\t2. acknowledgment from receiver yes i am ready to accept\n\t3. sync + acknowledgment from sender to receiver\n\n2. UDP --> Fast but unsecure. Use in Video like app where data loss do not impact.","x":-400,"y":100,"width":600,"height":260,"color":"4"},
+		{"id":"20b10aa661ed311f","type":"text","text":"Windowing --> The process of sending data segment per second.\n1. Can be adjust in TCP as per receiver convenience. Example if sender sends 100 segments per second and receiver only receive 90 segment then it can be adjust from sender side in TCP but not in UDP if loss happens it keep happening ","x":-400,"y":386,"width":607,"height":187,"color":"5"},
+		{"id":"2ef49b281801a325","type":"text","text":"Add Port Number \n1. Port number is 16 bits number i.e. 2^16 = 65536 \n2. ranging from 0 - 65535\n3. well known or reserved port numbers 0 - 1023\n4. public port number 1024 - 64511\n5. private port number 64512 - 65535\n\nSocket --> IP address + Port number\ninternet runs on sockets","x":-400,"y":600,"width":600,"height":280,"color":"2"},
+		{"id":"d861cfb2d7f79f46","type":"text","text":"Internet protocols\n1. IP\n2. ARP\n3. ICMP\n4. IGMP\n\n32 bits decimal number","x":318,"y":42,"width":362,"height":238,"color":"4"},
+		{"id":"fb4d377cb5a328b4","type":"text","text":"Network Access Layer protocol\n1. MAC\n2. Ethernet \n3. Frame-Relay\n\nMAC is 48 bits hexa-decimal number.","x":809,"y":-73,"width":431,"height":213,"color":"4"},
+		{"id":"aa36c0ceddcf45e5","type":"text","text":"MAC address --> 24 bits + 24 bits\n1. 1st 24 bits represent -> OUI (organizational unique identifier) tells about which brand is making that device ex. Dell, HP\n2. 2nd 24 bits represent --> NIC specific (Network interface card specific) tells about mac address of that particular device made by vendor. ex. Dell made 100 laptops of particular model then each laptop have unique Mac address which is decided by NIC","x":809,"y":161,"width":631,"height":239,"color":"5"},
+		{"id":"32b8f505fa638c28","x":-960,"y":-550,"width":525,"height":160,"color":"6","type":"text","text":"1. Simplex --> one device for one task. ex. FM, TV broadcast\n2. Half-Duplex --> one device for both task but one at a time. ex. walkie-talkie, mobile phones\n3. Full-Duplex --> one device for both task both task at same time. ex. zoom meeting"}
+	],
+	"edges":[
+		{"id":"d28e2b40bd4faf7a","fromNode":"1f0f356849ce1085","fromSide":"bottom","toNode":"22bbf63cec5897ef","toSide":"top"},
+		{"id":"4b7e06fbf5012edd","fromNode":"1f0f356849ce1085","fromSide":"bottom","toNode":"a236d653fe99a2db","toSide":"top"},
+		{"id":"b9d4716b619d5773","fromNode":"1f0f356849ce1085","fromSide":"bottom","toNode":"160ef14aeb16329d","toSide":"top"},
+		{"id":"aaa8b8568e8bca77","fromNode":"1f0f356849ce1085","fromSide":"bottom","toNode":"4e67c9bd5b313b3a","toSide":"top"},
+		{"id":"820d6c09d54ceb3e","fromNode":"22bbf63cec5897ef","fromSide":"bottom","toNode":"719fa454e5bc0b78","toSide":"top"},
+		{"id":"0337c3fa067f7b27","fromNode":"a236d653fe99a2db","fromSide":"bottom","toNode":"48e8fa8e0769be1b","toSide":"top"}
+	]
+}

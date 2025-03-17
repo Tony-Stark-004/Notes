@@ -1,0 +1,8 @@
+{
+	"nodes":[
+		{"id":"08df22f5f21a2539","x":-207,"y":-354,"width":387,"height":54,"color":"3","type":"text","text":"Convert Ext2 to Ext3 & Ext4"},
+		{"id":"e53342a9ae02ba7e","x":-520,"y":-280,"width":580,"height":600,"color":"1","type":"text","text":"***How to check whether journaling feature is supported by filesystem***\n1. `tune2fs -l /dev/sda | grep feature`\n\nHere, to convert a `ext2 filesystem` into `ext3 filesystem` make sure sure filesystem is not mounted.\n\n***How to convert***\n1. `tune2fs -j /dev/sda` \n2. because `ext3` is `ext2 + journaling feature` so above command is `enabling journaling feature` hence it is called `ext3 filesystem`\n3. `blkid /dev/sda` now it shows `ext3` instead of `ext2`\n4. `tune2fs -l /dev/sda | grep feature` now this command shows `has_journal` which means `it support journaling`\n\n"},
+		{"id":"77b89c972792434f","type":"text","text":"***Converting `ext3` to `ext4 filesystem`***\n\n1. `tune2fs -O extents,uninit_bg,dir_index /dev/sda`\n\nThat sat. `ext3 filesystem` is converted into `ext4` also make sure\n`-O` option is `capital O`\n\n***How to enable or disable journaling feature***\n1. `tune2fs -l /dev/sda | grep feature` making sure whether it support journaling feature\n2. also make sure your filesystem is not `mounted`\n\n`disabling`\n1. `tune2fs -O ^has_journal /dev/sda` it `disable journal feature`\n\n`enabling`\n1. `tune2fs -O has_journal /dev/sda` it `disable journal feature`\n2. `tune2fs -l /dev/sda | grep feature` for checking whether journaling feature enabled or not","x":80,"y":-280,"width":560,"height":600,"color":"4"}
+	],
+	"edges":[]
+}

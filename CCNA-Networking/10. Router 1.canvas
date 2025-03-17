@@ -1,0 +1,22 @@
+{
+	"nodes":[
+		{"id":"2ae60c176e387b1f","type":"text","text":"Working modes of cisco router `(Primary modes)`","x":-300,"y":-360,"width":580,"height":60,"color":"3"},
+		{"id":"c2ff6003dce510d5","type":"text","text":"1. User execution mode","x":-740,"y":-280,"width":250,"height":60},
+		{"id":"92a67d90a7b3082b","type":"text","text":"Functions : memory related works\n\n1. used for displaying output of the router function by using show command\n2. used for saving and deleting configuration\n\nSome important commands of 2nd mode\n1. Copy\n2. Show\n3. Delete\n4. Erase\n5. Reload\n6. Reload\n\n****NOTE*** : these function and commands can also implement by 3rd mode but the password that we set in 3rd mode is verified by 1st mode that's why first mode is important","x":-385,"y":-80,"width":665,"height":480,"color":"4"},
+		{"id":"1bf48c5a71d214df","type":"text","text":"Functions :\n1. used for basic monitoring and troubleshooting purpose\n2. used for password security implementation\n\nSome important commands of 1st mode\n1. Ping\n2. Traceroute\n3. Telnet\n4. SSH\n\n****NOTE*** : these function and commands can also implement by 3rd mode but the password that we set in 3rd mode is verified by 1st mode without verification of password you can not go to 2nd and 3rd mode that's why first mode is important","x":-1155,"y":-80,"width":665,"height":420,"color":"4"},
+		{"id":"f3ac28f97c4bae47","type":"text","text":"Functions :\n1. used for execution of all major commands of the router\n2. used for assigning IP address on the router interface , to change hostname, to run the routing protocols and all similar advanced stuff.\n\nSome important commands of 1st mode\n1. Ping\n2. Traceroute\n3. Telnet\n4. SSH\n\n****NOTE*** : As, all of the commands are run in this mode (even the commands of first and seconds modes) so, this is called the global configuration mode","x":360,"y":-80,"width":665,"height":420,"color":"4"},
+		{"id":"8162cdcd6902d2f4","type":"text","text":"3. Global configuration mode","x":480,"y":-280,"width":333,"height":60},
+		{"id":"4e80d5971f50c2a6","type":"text","text":"2. Privilege execution mode","x":-157,"y":-250,"width":295,"height":60},
+		{"id":"60779bd2bb6bdb17","type":"text","text":"How to switch between primary modes","x":-427,"y":480,"width":800,"height":60,"color":"3"},
+		{"id":"e4b2f9e5925d8426","type":"text","text":"`Router>` here `>` indicate you are in `1st mode`\n\nhow to go to second mode\n\n1. `Router> enable` here `enable is command to switch to 2nd mode`\n2. after switching to second mode `Router#` here `#` indicate `2n mode`\n3. `Router# configure terminal` press enter\n4. `Router (config)#` here `(config)#` indicate you are in `3rd mode`\n\n\n****NOTE*** :  \n1. press exit to exit higher modes\n2. `?` for help Example\n\t1. `enable` is full command name\n\t2. if you type `en?` it gives you `enable` as suggestion so you also can use `en` instead of writing whole `enable command`","x":-542,"y":580,"width":980,"height":440,"color":"1"},
+		{"id":"48f913de0ffe0e6d","type":"text","text":"Sub - modes of a cisco router","x":-427,"y":1080,"width":770,"height":50,"color":"3"},
+		{"id":"a42ffe603e73dc9f","type":"text","text":"Line sub mode --> all related to `access config like for using console port please enter password only then you are allow to access it`\n\n1. when you are in console mode\n2. `Router(Config-line)#`","x":-322,"y":1188,"width":625,"height":172},
+		{"id":"a98244248a27f7f2","type":"text","text":"Protocol sub mode\n\n1. when you are running some routing protocol\n2. `Router(Config-rtr)#`","x":343,"y":1208,"width":625,"height":132},
+		{"id":"20b2f7d62af67e4d","type":"text","text":"Interface sub mode --> all related to config like `give ip address to router`\n\n1. when you are in some interface of a router\n2. `Router(Config-if)#`","x":-977,"y":1208,"width":625,"height":132}
+	],
+	"edges":[
+		{"id":"39f3f245caf3676e","fromNode":"c2ff6003dce510d5","fromSide":"left","toNode":"1bf48c5a71d214df","toSide":"top"},
+		{"id":"b95f721edd4994dd","fromNode":"8162cdcd6902d2f4","fromSide":"bottom","toNode":"f3ac28f97c4bae47","toSide":"top"},
+		{"id":"13ad45896ded8088","fromNode":"4e80d5971f50c2a6","fromSide":"bottom","toNode":"92a67d90a7b3082b","toSide":"top"}
+	]
+}

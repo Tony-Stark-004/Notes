@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"1fe27415818154eb","type":"text","text":"# Prometheus","x":-260,"y":-360,"width":440,"height":60,"color":"3"},
+		{"id":"a645a9a4b106388a","type":"text","text":"# Prometheus\nMonitoring tool\n\nPrometheus is used to monitor Highly dynamic container environment like docker-swarm and Kubernetes\n\n","x":-540,"y":-280,"width":500,"height":200},
+		{"id":"7d1ca3685163b3e5","type":"text","text":"# Main Component: Prometheus Server\nPrometheus server does the actual monitoring work\n\nIt has 3 essential parts\n\n#### Time Series Database\nIt stores metrics data like : Current CPU usage, No. of exceptions in application\n\n#### Data Retrieval Worker\nIt is responsible to pulling those metrics from applications, services and servers etc. and it store them in Time series database\n\n#### Web-server\nIt has web-server or say server Api that accept queries for that data. And this Api is used to display data in a dashboard or UI either in Prometheus UI or other data visualization tool like Grafana","x":-20,"y":-280,"width":620,"height":600},
+		{"id":"e7aacc3ac7e81737","type":"file","file":"Pasted image 20250202202523.png","x":260,"y":-506,"width":400,"height":206},
+		{"id":"28916c5ee27804ae","type":"text","text":"# Targets and Metrics\n\n##### What does Prometheus monitor ?\nIt could be anything like : \n1. Entire Linux server, \n2. Apache server, \n3. Single Application,\n4. Service like database\n\nThose things that Prometheus target is called `targets` and each targets has `units` to monitoring for example\n1. for Linux servers targets unit can be\n\t1. Current CPU status\n\t2. Memory/Disk space usage\n\nAnd, the unit that we would like to monitor for specific target is called `metric` and metrics are what get saved in Prometheus Time series database","x":780,"y":-280,"width":640,"height":540},
+		{"id":"60b55e88a38edabb","type":"text","text":"# Metrics\nPrometheus defined human-readable text-format for this metrics\n\nMetrics entries has 2 attributes to increase its readability which is\n* Help attribute ---> description of what the metrics is\n* Type attribute ---> It is of 3 type\n\n1. `counter` --> indicate how many times something happens\n2. `guage` --> metrics that go both up and down example: what is the current value of CPU usage now. It can be high or low\n3. `Histogram` --> for tracing something how long or how big the size of request was there is Histogram type","x":780,"y":290,"width":960,"height":370}
+	],
+	"edges":[
+		{"id":"a99d518a97e16cde","fromNode":"7d1ca3685163b3e5","fromSide":"right","toNode":"e7aacc3ac7e81737","toSide":"right"}
+	]
+}

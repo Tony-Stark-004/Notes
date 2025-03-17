@@ -1,0 +1,10 @@
+{
+	"nodes":[
+		{"id":"d46aed39b2b5b303","type":"text","text":"Developer support","x":-160,"y":-222,"width":250,"height":60},
+		{"id":"b871866024806d4c","type":"text","text":"Business support","x":125,"y":-222,"width":250,"height":60},
+		{"id":"a00716a9cef7c61c","type":"text","text":"Enterprise Support","x":420,"y":-222,"width":250,"height":60},
+		{"id":"059e50bd15d45334","x":-460,"y":-222,"width":250,"height":60,"type":"text","text":"Basic support (free)"},
+		{"id":"ebf83d712fea5a2e","x":-120,"y":-340,"width":440,"height":60,"color":"3","type":"text","text":"AWS support plans"}
+	],
+	"edges":[]
+}

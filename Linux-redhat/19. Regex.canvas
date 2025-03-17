@@ -1,0 +1,18 @@
+{
+	"nodes":[
+		{"id":"49b59b6e4b004af3","type":"text","text":"1. Extended Regular Expression `(-E)`\n\nExample :\n1. `grep -E 'i|a' list.txt` this means find word `i or a` if any one is matched give output if both are matched then also give output\n2. output is `Tania, Laura, Valentia` all word include `a` also `Tania, Valentina` includes `a` as well as `i`\n\nNow\n1. `grep -E 'o*' text.txt` here `*` behaves as null it print entire thing so\n2. output is `ll, lol, lool, loool`\n3. so to print only `matching o content` correct command is `grep -E 'o+' text.txt`\n4. output is `lol, lool, loool` here there is no `ll`\n\nnow\n1. `grep a$ list.txt` the `$` sign make sure `a char is exactly last char of word` so\n2. output is `Tania, Laura, Valentina` all word has ended with `char a`\n3. `grep ra$ list.txt` means `ra` should be last characters of word so\n4. output is `Laura` only\n\nnow\n1. `grep ^Val list.txt`  the `^ sign`  make sure `Val` should be starting 3 character so\n2. output is `Valentina` only\n\nNow, \n1. `grep over file.txt` here it give the output matching `over word` but it doesn't matter whether it is `pure single over word` or `mixed word` so \n2. output is `hangover, i am over, no roovery`\n3. to get only those output which includes `pure over keyword` the command should be\n4. `grep '\\bover\\b' file.txt` so output is `i am over` only\n5. we can use like that as well `grep -w over file.txt` same output `i am over`","x":-240,"y":-300,"width":720,"height":940},
+		{"id":"53ff716afbbd5bf7","type":"text","text":"1. Basic Regular Expression `(-G)`\n\nExample :\n1. `grep -G 'i|a' list.txt` this won't run because we are using `Basic regular expression` so we need to use `back slash (\\) before pipe sign (|)`\n2. `grep -G 'i\\|a' list.txt` \n3. output is `Tania, Laura, Valentia` all word include `a` also `Tania, Valentina` includes `a` as well as `i`","x":-940,"y":-300,"width":660,"height":940},
+		{"id":"401ca4ed9cda8223","type":"text","text":"1. Perl Regular Expression `(-P)`","x":520,"y":-300,"width":660,"height":940},
+		{"id":"1e909213cce6e9b5","type":"text","text":"`this is file whose name is text.txt` and its content is\n\nLL\nLOL\nLOOL\nLOOOL","x":-140,"y":-580,"width":400,"height":220,"color":"5"},
+		{"id":"e3df9c49c2f64d95","type":"text","text":"Regex","x":-340,"y":-660,"width":720,"height":50,"color":"3"},
+		{"id":"f1ff485608e7afd4","type":"text","text":"`this is file whose name is list.txt` and its content is\n\nTania\nLaura\nValentina","x":-120,"y":680,"width":400,"height":220,"color":"5"}
+	],
+	"edges":[
+		{"id":"90f591c350c78142","fromNode":"f1ff485608e7afd4","fromSide":"left","toNode":"53ff716afbbd5bf7","toSide":"bottom"},
+		{"id":"77c98c04bf1beae9","fromNode":"f1ff485608e7afd4","fromSide":"top","toNode":"49b59b6e4b004af3","toSide":"bottom"},
+		{"id":"f58bd9e4903a8a0e","fromNode":"f1ff485608e7afd4","fromSide":"right","toNode":"401ca4ed9cda8223","toSide":"bottom"},
+		{"id":"5ace207511935447","fromNode":"1e909213cce6e9b5","fromSide":"left","toNode":"53ff716afbbd5bf7","toSide":"top"},
+		{"id":"b44c8863ce0ec7f5","fromNode":"1e909213cce6e9b5","fromSide":"right","toNode":"401ca4ed9cda8223","toSide":"top"},
+		{"id":"ac63f7f2a03bdcc9","fromNode":"1e909213cce6e9b5","fromSide":"bottom","toNode":"49b59b6e4b004af3","toSide":"top"}
+	]
+}

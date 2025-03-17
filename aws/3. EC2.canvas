@@ -1,0 +1,39 @@
+{
+	"nodes":[
+		{"id":"429ab9f37f3eab7c","type":"text","text":"EC2 (Elastic compute cloud)","x":-320,"y":-320,"width":640,"height":60,"color":"3"},
+		{"id":"b3d8e795e169a93e","type":"text","text":"1. Regional service\n2. Uses Amazon machine image (AMI) which is pre-configured virtual machine image that includes an operating system\n3. Key-pairs are used to securely SSH into your EC2 instances","x":-500,"y":-220,"width":1000,"height":120},
+		{"id":"08f2677490241fc1","type":"text","text":"***Pricing model*** : \n\n1. on-demand instance\n2. reserved instance\n3. spot instance --> bidding\n4. dedicated hosts --> no sharing dedicated to you\n5. saving plans","x":-540,"y":-60,"width":480,"height":280},
+		{"id":"42d182af3d1b8a0d","type":"text","text":"***EC2 Instance Types*** : \n\n1. General Purpose --> suitable for general purpose\n2. Compute Optimized --> suitable for app requiring more CPU\n3. Memory Optimized --> suitable for app requiring more RAM\n4. Storage Optimized --> suitable for app requiring more storage\n5. Accelerated Computing --> suitable for heavy usages\n","x":-40,"y":-60,"width":580,"height":280},
+		{"id":"89c0a562da2bbfb5","type":"text","text":"***Burstable instance*** : \n1. do not down while vertical scaling\n2. example -> T instances (T2, T3)","x":-524,"y":-480,"width":524,"height":140},
+		{"id":"f197b6c2291b0044","type":"text","text":"Classification of EC2 Volumes","x":-320,"y":280,"width":640,"height":60,"color":"3"},
+		{"id":"30daedb1a9f61044","type":"text","text":"Elastic Block Store (EBS) volume\n\n1. data persist on start/stop instance","x":-400,"y":399,"width":360,"height":121},
+		{"id":"7f87c9f41e84693a","type":"text","text":"***EBS Types***\n\n1. General Purpose SSD\n2. Provisioned IOPS SSD --> High performance for input/output\n3. Throughput Optimized HDD -->for frequent data\n4. Cold HDD --> for less frequent data\n5. Magnetic HDD","x":-400,"y":580,"width":560,"height":240},
+		{"id":"3eb784ff282fe1ec","type":"text","text":"Instance Store Volumes\n\n1. data temporary on start/stop instance","x":40,"y":420,"width":360,"height":121},
+		{"id":"2a6ce48841a6903b","type":"text","text":"EC2 image or Amazon machine image (AMI)","x":401,"y":-523,"width":379,"height":50,"color":"3"},
+		{"id":"7a4a1605736ade73","type":"text","text":"It is predefined image which involves OS and other application software to launch the instance","x":431,"y":-440,"width":320,"height":120},
+		{"id":"2b0cd2bde9c0c633","type":"text","text":"***IMPORTANT***\n\n**How to connect with EC2 instance**\n1. for window \n\t1. you need `RDP (remote desktop protocol) clinet` to connect with EC2 instance\n\t2. `RDP protoco`l (TCP port 3389) is used\n2. for Linux\n\t1. we need `puTTY` or `moba-xterm` also `putty use .PPK extension file` so we need `PuTTYgen` to convert `.pem to .PPK`\n\t2. `SSH` is used in Linux\n\n\n","x":-540,"y":-843,"width":830,"height":320},
+		{"id":"10e0c7eec2e3b67c","type":"text","text":"***NOTE***\nconcept of `active directory` which is `directory service in aws` is used to login into EC2 instance by multiple user because we can't give the `.pem` or `key-pair` file to everyone","x":-8,"y":-1080,"width":439,"height":199,"color":"1"},
+		{"id":"576812a8396f0f62","type":"text","text":"act as virtual firewall and used to control inbound and outbound traffic.\n\n***NOTE***\n1. Security group is work under stateful rule. meaning if you allow inbound traffic then no need to allow outbound traffic .\n2. NACL is work under stateless rule. meaning if you allow inbound traffic then you need to allow outbound traffic as well .","x":480,"y":380,"width":460,"height":320},
+		{"id":"d759e973eb1e73ad","type":"text","text":"NACL (Network Access control list)","x":480,"y":728,"width":320,"height":60,"color":"3"},
+		{"id":"5eaf4f98e73de354","type":"text","text":"EC2 Security group","x":480,"y":280,"width":250,"height":60,"color":"3"},
+		{"id":"cd96af647d9f95ba","type":"text","text":"Also called `subnet-level firewall`\n\ngive extra security layer traffic first reach `NACL` then `security group layer`","x":220,"y":840,"width":460,"height":120},
+		{"id":"5447d97cff03f5aa","type":"text","text":"Type of scaling in EC2","x":-400,"y":870,"width":280,"height":50,"color":"3"},
+		{"id":"824031aa53c3ccd9","type":"text","text":"1. Manual scaling\n2. Dynamic scaling --> automatic scaling\n3. Scheduled scaling --> scaling based on time given like alarm\n4. Predictive scaling --> scaling based on forecasting of traffic","x":-400,"y":940,"width":540,"height":140},
+		{"id":"6cff15f1f337ce82","type":"text","text":"Type of ELB (Elastic load balancer)","x":210,"y":985,"width":310,"height":50,"color":"3"},
+		{"id":"2d32a94d5224b9d2","type":"text","text":"1. Classic load balancer --> legacy service\n2. Application load balancer --> recommended\n3. Network load balancer\n4. Gateway load balancer\n","x":210,"y":1055,"width":450,"height":165},
+		{"id":"6645c5aefbd53bf9","type":"text","text":"***NOTE*** : problem with `classic load balancer` is only one DNS or IP can used. for multiple DNS we have to use multiple `classic load balancer` so we used `Application load balancer`","x":680,"y":1050,"width":400,"height":150,"color":"1"},
+		{"id":"9f4c969e3febd50c","type":"text","text":"Dynamic IP is allocated by DHCP \n\n1. IPV4 is 32 bit number\n2. IPV6 is 128 bit number\n\n***NOTE*** : Elastic IP Address meaning static IP address","x":-580,"y":-1080,"width":455,"height":199,"color":"1"},
+		{"id":"284d8be209b64ed3","type":"text","text":"Global Accelerator (GA)","x":-400,"y":1125,"width":280,"height":55,"color":"3"},
+		{"id":"dd9fc9206646647f","type":"text","text":"In AWS, a global accelerator is a networking services designed to improve the availability and performance of your applications by directing traffic to the healthy endpoint from your users\n\n1. it has 2 static IP\n\t1. one for end user\n\t2. second for load balancer\n\nSO any request first come to `global accelerator` and goes to `load balancer` through `global accelerator`\n\n***NOTE*** : better than CDN\n","x":-400,"y":1200,"width":500,"height":380},
+		{"id":"bf973a4721a6b22e","x":210,"y":1280,"width":250,"height":60,"color":"3","type":"text","text":"Placement group"},
+		{"id":"c20b654f73de5b4c","type":"text","text":"You can choose location, availability and position of EC2 instance by using `placement group`\n\nType of placement groups\n\n1. Cluster placement group --> instance are very close\n2. Partition placement group --> partition and separated by group\n3. Spread placement group --> provide maximum isolation\n","x":210,"y":1360,"width":570,"height":260}
+	],
+	"edges":[
+		{"id":"b9624cc7476af400","fromNode":"f197b6c2291b0044","fromSide":"bottom","toNode":"30daedb1a9f61044","toSide":"top"},
+		{"id":"3c0b8736e95b5cb8","fromNode":"f197b6c2291b0044","fromSide":"bottom","toNode":"3eb784ff282fe1ec","toSide":"top"},
+		{"id":"a8037e8705a4b19b","fromNode":"30daedb1a9f61044","fromSide":"bottom","toNode":"7f87c9f41e84693a","toSide":"top"},
+		{"id":"f38b0d3fbc383a20","fromNode":"2a6ce48841a6903b","fromSide":"bottom","toNode":"7a4a1605736ade73","toSide":"top"},
+		{"id":"6f1269d7cdeb9181","fromNode":"d759e973eb1e73ad","fromSide":"bottom","toNode":"cd96af647d9f95ba","toSide":"top"},
+		{"id":"ab082e925b0a2ac6","fromNode":"5eaf4f98e73de354","fromSide":"bottom","toNode":"576812a8396f0f62","toSide":"top"}
+	]
+}

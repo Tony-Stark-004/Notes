@@ -1,0 +1,14 @@
+{
+	"nodes":[
+		{"id":"ac4aa42c86c53163","type":"text","text":"It is known as `REPL` meaning\n1. Read\n2. Evaluate\n3. Print\n4. Loop","x":-417,"y":-246,"width":322,"height":206},
+		{"id":"76fbed99cbbfb11c","type":"text","text":"`How to start with Jshell`\n1. run `jshell` in `cmd`\n2. run `/help intro`\n3. run `/help`\n4. run `/var` show all variable","x":-60,"y":-246,"width":360,"height":206},
+		{"id":"1fb841435059aade","type":"text","text":"`1st code`\n1. `System.out.print(\"Hello World\")`","x":-265,"y":-20,"width":411,"height":100},
+		{"id":"3351e9ce6b20e49e","type":"text","text":"JShell","x":-220,"y":-340,"width":250,"height":60,"color":"3"},
+		{"id":"73a80e9575e89285","type":"text","text":"1. `Keyword` --> Reserved words or any one of the number that have a predefined meaning in the java programming Example : `int, while, try etc`\n2. `Variable` --> It is a way to store information in RAM of our computer.\n3. `Data type` --> Tells which type of data is Example `int myNumber = 4;` means whole number of integer data\n4. `Declaration statement` --> Statement is complete executable code. Statement which declare variable is called `declarative statement`\n\n****NOTE*** : \n1. `\" \"`  double quotes meaning` string literals`\n2. `' '` single quotes meaning `character literals`","x":-560,"y":120,"width":1155,"height":280},
+		{"id":"ebb13a42fb0fae26","type":"text","text":"`NullPointerException` when error is type of null\n`NumberFormatException` when user have to enter numeric value nut enter string value","x":-560,"y":440,"width":749,"height":93}
+	],
+	"edges":[
+		{"id":"83ff7d1505e5571b","fromNode":"3351e9ce6b20e49e","fromSide":"left","toNode":"ac4aa42c86c53163","toSide":"top"},
+		{"id":"d6cffda58458fa5b","fromNode":"3351e9ce6b20e49e","fromSide":"right","toNode":"76fbed99cbbfb11c","toSide":"top"}
+	]
+}
